@@ -13,4 +13,4 @@ No forma parte del portafolio principal de Diego. Este espacio puede usarse para
 
 ## Publicación
 
-El proyecto está preparado para guardarse en un repositorio independiente de GitHub. La visibilidad pública o privada se decidirá antes de publicarlo.
+El proyecto se guarda en un repositorio privado e independiente de GitHub.
