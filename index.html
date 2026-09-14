@@ -13,39 +13,63 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23090909'/%3E%3Ctext x='7' y='43' fill='white' font-family='Arial' font-size='34' font-weight='900'%3EBF%3C/text%3E%3Ccircle cx='53' cy='48' r='6' fill='%23ff4a1c'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css" />
+    <link rel="stylesheet" href="./styles.css?v=experience-number-92" />
   </head>
   <body>
     <main class="hero" id="inicio">
       <header class="topbar">
-        <a class="brand" href="#inicio" aria-label="Portafolio de Bernardo Franco, inicio">
+        <a
+          class="brand"
+          href="#inicio"
+          aria-label="Portafolio de Bernardo Franco, inicio"
+          data-i18n-aria="brand.home"
+        >
           <span>BF</span><i></i>
         </a>
 
         <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav">
           <span></span><span></span>
-          <span class="sr-only">Abrir menú</span>
+          <span class="sr-only" data-i18n="nav.openMenu">Abrir menú</span>
         </button>
 
-        <nav class="nav" id="main-nav" aria-label="Navegación principal">
-          <a href="#proyectos">Proyectos</a>
-          <a href="#perfil">Perfil</a>
-          <a href="#contacto">Contacto</a>
+        <nav
+          class="nav"
+          id="main-nav"
+          aria-label="Navegación principal"
+          data-i18n-aria="nav.label"
+        >
+          <a href="#proyectos" data-i18n="nav.projects">Proyectos</a>
+          <a href="#perfil" data-i18n="nav.profile">Perfil</a>
+          <a href="#contacto" data-i18n="nav.contact">Contacto</a>
+          <div class="language-switcher" role="group" aria-label="Idioma" data-i18n-aria="language.label">
+            <button class="language-option" type="button" data-language="es" aria-pressed="true">
+              ES
+            </button>
+            <span aria-hidden="true">/</span>
+            <button class="language-option" type="button" data-language="en" aria-pressed="false">
+              EN
+            </button>
+          </div>
         </nav>
       </header>
 
       <section class="hero-copy" aria-labelledby="hero-title">
         <p class="eyebrow">Bernardo Franco</p>
-        <h1 id="hero-title" aria-label="Producción escénica y visual.">
+        <h1
+          id="hero-title"
+          aria-label="Producción escénica y visual."
+          data-i18n-aria="hero.titleLabel"
+          data-i18n-lines="hero.title"
+        >
           Producción<br />
           escénica<br />
           y visual<span class="title-dot" aria-hidden="true"></span>
         </h1>
-        <p class="intro">
+        <p class="intro" data-i18n-lines="hero.intro">
           Transformo ideas en experiencias<br />
           a través de la luz, el espacio y la imagen.
         </p>
-        <a class="project-link" href="#proyectos">
+        <a class="project-link" href="#proyectos" data-i18n-lines="hero.cta">
           Ver proyectos
           <span aria-hidden="true"></span>
         </a>
@@ -59,22 +83,30 @@
         <img src="./assets/bernardo-transparent.png" alt="" />
       </div>
 
-      <p class="disciplines">PRODUCCIÓN TÉCNICA<br />ILUMINACIÓN · DIRECCIÓN VISUAL</p>
-      <p class="folio">PORTAFOLIO / 2026</p>
+      <p class="disciplines" data-i18n-lines="hero.disciplines">
+        PRODUCCIÓN TÉCNICA<br />ILUMINACIÓN · DIRECCIÓN VISUAL
+      </p>
+      <p class="folio" data-i18n="hero.folio">PORTAFOLIO / 2026</p>
 
-      <a class="scroll-cue" href="#proyectos" aria-label="Bajar a proyectos">
+      <a
+        class="scroll-cue"
+        href="#proyectos"
+        aria-label="Bajar a proyectos"
+        data-i18n-aria="hero.scrollCue"
+      >
         <span></span>
       </a>
     </main>
 
     <section class="projects-section" id="proyectos" aria-labelledby="projects-title">
       <header class="section-heading projects-heading">
-        <p class="section-index">01 / 04</p>
         <div>
-          <p class="section-kicker">Selección 2023—2026</p>
-          <h2 id="projects-title">Proyectos<br />destacados<span>.</span></h2>
+          <p class="section-kicker" data-i18n="projects.kicker">Selección 2023—2026</p>
+          <h2 id="projects-title" data-i18n-lines="projects.title">
+            Proyectos<br />destacados<span>.</span>
+          </h2>
         </div>
-        <p class="section-note">
+        <p class="section-note" data-i18n="projects.note">
           Producción, iluminación y construcción de atmósferas para música,
           cultura y contenido audiovisual.
         </p>
@@ -83,145 +115,195 @@
       <div class="projects-grid">
         <article class="project-card project-card--wide">
           <figure class="project-media">
-            <img src="./assets/projects/ceniza.jpg" alt="Producción audiovisual de Ceniza iluminada en rojo, azul y verde" />
+            <img
+              src="./assets/projects/ceniza.jpg"
+              alt="Producción audiovisual de Ceniza iluminada en rojo, azul y verde"
+              data-i18n-alt="projects.cenizaAlt"
+            />
           </figure>
           <div class="project-meta">
-            <p>01 · Producción audiovisual</p>
+            <p data-i18n="projects.cenizaCategory">01 · Producción audiovisual</p>
             <h3>Ceniza</h3>
-            <span>Cofundador · Producción técnica e iluminación</span>
+            <span data-i18n="projects.cenizaRole">Cofundador · Producción técnica e iluminación</span>
           </div>
         </article>
 
         <article class="project-card project-card--tall">
           <figure class="project-media">
-            <img src="./assets/projects/super-rayo.jpg" alt="Escenario y cabina de Super Rayo con iluminación roja y azul" />
+            <img
+              src="./assets/projects/super-rayo.jpg"
+              alt="Escenario y cabina de Super Rayo con iluminación roja y azul"
+              data-i18n-alt="projects.superRayoAlt"
+            />
           </figure>
           <div class="project-meta">
-            <p>02 · Música y cultura</p>
+            <p data-i18n="projects.superRayoCategory">02 · Música y cultura</p>
             <h3>Super Rayo</h3>
-            <span>Jefe de cabina · Producción técnica</span>
+            <span data-i18n="projects.superRayoRole">Jefe de cabina · Producción técnica</span>
           </div>
         </article>
 
         <article class="project-card project-card--tall">
           <figure class="project-media">
-            <img src="./assets/projects/culebras.jpg" alt="Instalación escénica con vegetación, neón y luces de color" />
+            <img
+              src="./assets/projects/culebras.jpg"
+              alt="Instalación escénica con vegetación, neón y luces de color"
+              data-i18n-alt="projects.culebrasAlt"
+            />
           </figure>
           <div class="project-meta">
-            <p>03 · Instalación escénica</p>
+            <p data-i18n="projects.culebrasCategory">03 · Instalación escénica</p>
             <h3>Todas las culebras<br />son serpientes</h3>
-            <span>Asistencia de arte · Producción y montaje</span>
+            <span data-i18n="projects.culebrasRole">Asistencia de arte · Producción y montaje</span>
           </div>
         </article>
 
         <article class="project-card project-card--wide project-card--last">
           <figure class="project-media">
-            <img src="./assets/projects/amigos-vinilos.jpg" alt="Set de Amigos y Vinilos iluminado en tonos violetas" />
+            <img
+              src="./assets/projects/amigos-vinilos.jpg"
+              alt="Set de Amigos y Vinilos iluminado en tonos violetas"
+              data-i18n-alt="projects.amigosAlt"
+            />
           </figure>
           <div class="project-meta">
-            <p>04 · Formato editorial</p>
+            <p data-i18n="projects.amigosCategory">04 · Formato editorial</p>
             <h3>Amigos y Vinilos</h3>
-            <span>Producción · Dirección artística y montaje</span>
+            <span data-i18n="projects.amigosRole">Producción · Dirección artística y montaje</span>
           </div>
         </article>
       </div>
     </section>
 
     <section class="profile-section" id="perfil" aria-labelledby="profile-title">
-      <p class="section-index">02 / 04</p>
       <div class="profile-intro">
-        <p class="section-kicker">Acerca de mí</p>
-        <h2 id="profile-title">Entre lo técnico<br />y lo visual<span>.</span></h2>
-        <p>
+        <p class="section-kicker" data-i18n="profile.kicker">Acerca de mí</p>
+        <h2 id="profile-title" data-i18n-lines="profile.title">
+          Entre lo técnico<br />y lo visual<span>.</span>
+        </h2>
+        <p data-i18n="profile.body">
           Trabajo en la intersección de la producción, la iluminación, el montaje
           y la dirección visual. Convierto una idea en un sistema ejecutable sin
           perder su intención estética.
         </p>
       </div>
 
-      <div class="capabilities" aria-label="Capacidades">
+      <div class="capabilities" aria-label="Capacidades" data-i18n-aria="profile.capabilitiesLabel">
         <article>
           <span>01</span>
-          <h3>Producción</h3>
-          <p>Planificación, cronogramas, logística, coordinación y ejecución en set.</p>
+          <h3 data-i18n="profile.productionTitle">Producción</h3>
+          <p data-i18n="profile.productionBody">Planificación, cronogramas, logística, coordinación y ejecución en set.</p>
         </article>
         <article>
           <span>02</span>
-          <h3>Iluminación</h3>
-          <p>Diagramas, planos, montaje y construcción de ambientes con luz.</p>
+          <h3 data-i18n="profile.lightingTitle">Iluminación</h3>
+          <p data-i18n="profile.lightingBody">Diagramas, planos, montaje y construcción de ambientes con luz.</p>
         </article>
         <article>
           <span>03</span>
-          <h3>Dirección visual</h3>
-          <p>Lectura conceptual, referencias, composición espacial y coherencia estética.</p>
+          <h3 data-i18n="profile.visualTitle">Dirección visual</h3>
+          <p data-i18n="profile.visualBody">Lectura conceptual, referencias, composición espacial y coherencia estética.</p>
         </article>
         <article>
           <span>04</span>
-          <h3>Postproducción</h3>
-          <p>Photoshop, After Effects, DaVinci Resolve y creación de espacios con Unity.</p>
+          <h3 data-i18n="profile.postTitle">Postproducción</h3>
+          <p data-i18n="profile.postBody">Photoshop, After Effects, DaVinci Resolve y creación de espacios con Unity.</p>
         </article>
       </div>
     </section>
 
     <section class="experience-section" aria-labelledby="experience-title">
       <header class="experience-heading">
-        <p class="section-index">03 / 04</p>
-        <p class="section-kicker">Experiencia</p>
-        <h2 id="experience-title">De la idea<br />al espacio<span>.</span></h2>
+        <p class="section-kicker" data-i18n="experience.kicker">Experiencia</p>
+        <h2 id="experience-title" data-i18n-lines="experience.title">
+          De la idea<br />al espacio<span>.</span>
+        </h2>
       </header>
 
       <div class="experience-list">
         <article>
-          <p>Producción ejecutiva · Audiovisual · Técnica</p>
+          <p data-i18n="experience.cenizaCategory">Producción ejecutiva · Audiovisual · Técnica</p>
           <h3>Ceniza</h3>
-          <span>Cofundador</span>
+          <span data-i18n="experience.cenizaRole">Cofundador</span>
         </article>
         <article>
-          <p>Música · Escena · Cultura independiente</p>
+          <p data-i18n="experience.superRayoCategory">Música · Escena · Cultura independiente</p>
           <h3>Super Rayo</h3>
-          <span>Jefe de cabina · Productor técnico</span>
+          <span data-i18n="experience.superRayoRole">Jefe de cabina · Productor técnico</span>
         </article>
         <article>
-          <p>Dirección de arte · Montaje</p>
+          <p data-i18n="experience.culebrasCategory">Dirección de arte · Montaje</p>
           <h3>Todas las culebras son serpientes</h3>
-          <span>Asistente de producción y arte</span>
+          <span data-i18n="experience.culebrasRole">Asistente de producción y arte</span>
         </article>
         <article>
-          <p>Contenido digital · Edición</p>
+          <p data-i18n="experience.agendaCategory">Contenido digital · Edición</p>
           <h3>Agendavacialmallena</h3>
-          <span>Producción · Edición</span>
+          <span data-i18n="experience.agendaRole">Producción · Edición</span>
         </article>
       </div>
 
-      <p class="experience-side">PREPRODUCCIÓN / SET / POST</p>
+      <p class="experience-side" data-i18n="experience.side">PREPRODUCCIÓN / SET / POST</p>
     </section>
 
     <footer class="contact-section" id="contacto" aria-labelledby="contact-title">
       <div class="contact-topline">
-        <p class="section-index">04 / 04</p>
         <p>BOGOTÁ · COLOMBIA</p>
       </div>
 
       <div class="contact-main">
-        <p class="section-kicker">¿Tienes una idea?</p>
-        <h2 id="contact-title">Trabajemos<br />juntos<span>.</span></h2>
-        <a class="contact-mail" href="mailto:berfranco.92@gmail.com">
-          berfranco.92@gmail.com
+        <p class="section-kicker" data-i18n="contact.kicker">¿Tienes una idea?</p>
+        <h2 id="contact-title" data-i18n-lines="contact.title">
+          Trabajemos<br />juntos<span>.</span>
+        </h2>
+        <a
+          class="contact-cta"
+          href="https://wa.me/573105632567"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Hablemos por WhatsApp"
+          data-i18n-aria="contact.whatsappLabel"
+          data-i18n-lines="contact.cta"
+        >
+          Hablemos
           <i aria-hidden="true"></i>
         </a>
       </div>
 
       <div class="contact-details">
-        <a href="tel:+573105632567">+57 310 563 2567</a>
-        <a href="https://www.instagram.com/bercho92/" target="_blank" rel="noreferrer">@Bercho92</a>
+        <a
+          href="https://mail.google.com/mail/?view=cm&amp;fs=1&amp;to=berfranco.92@gmail.com"
+          target="_blank"
+          rel="noreferrer"
+          aria-label="Escribir un correo a Bernardo Franco"
+          data-i18n="contact.email"
+          data-i18n-aria="contact.emailLabel"
+        >
+          Correo
+        </a>
+        <a
+          href="https://www.instagram.com/bercho92/"
+          target="_blank"
+          rel="noreferrer"
+          data-i18n="contact.instagram"
+        >
+          Instagram
+        </a>
         <a href="https://www.cenizaproducciones.com/" target="_blank" rel="noreferrer">Ceniza Producciones</a>
       </div>
 
-      <a class="back-to-top" href="#inicio" aria-label="Volver al inicio">
+      <a
+        class="back-to-top"
+        href="#inicio"
+        aria-label="Volver al inicio"
+        data-i18n-aria="contact.backToTop"
+      >
         <span></span>
       </a>
     </footer>
 
-    <script src="./script.js"></script>
+    <script src="./assets/vendor/gsap.min.js?v=3.15.0"></script>
+    <script src="./assets/vendor/ScrollTrigger.min.js?v=3.15.0"></script>
+    <script src="./script.js?v=email-compose-fix"></script>
   </body>
 </html>
