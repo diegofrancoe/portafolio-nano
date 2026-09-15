@@ -25,20 +25,33 @@ const translations = {
     "projects.note":
       "Producción, iluminación y construcción de atmósferas para música, cultura y contenido audiovisual.",
     "projects.cenizaAlt":
-      "Producción audiovisual de Ceniza iluminada en rojo, azul y verde",
+      "Retrato de una mujer bajo iluminación roja para una producción de Ceniza",
     "projects.cenizaCategory": "01 · Producción audiovisual",
     "projects.cenizaRole": "Cofundador · Producción técnica e iluminación",
+    "projects.cenizaLinkLabel": "Ver proyecto Ceniza",
     "projects.superRayoAlt":
-      "Escenario y cabina de Super Rayo con iluminación roja y azul",
+      "Cabina de Super Rayo durante un evento con iluminación roja y azul",
     "projects.superRayoCategory": "02 · Música y cultura",
     "projects.superRayoRole": "Jefe de cabina · Producción técnica",
+    "projects.superRayoLinkLabel": "Ver proyecto Super Rayo",
+    "projects.agendaAlt": "Protagonista de Agendavaciaalmallena en un parque de Bogotá",
+    "projects.agendaCategory": "03 · Contenido digital",
+    "projects.agendaRole": "Producción · Edición",
+    "projects.agendaLinkLabel": "Ver proyecto Agendavaciaalmallena",
     "projects.culebrasAlt":
       "Instalación escénica con vegetación, neón y luces de color",
     "projects.culebrasCategory": "03 · Instalación escénica",
     "projects.culebrasRole": "Asistencia de arte · Producción y montaje",
-    "projects.amigosAlt": "Set de Amigos y Vinilos iluminado en tonos violetas",
+    "projects.culebrasLinkLabel": "Ver proyecto Todas las culebras son serpientes",
+    "projects.amigosAlt": "Producción detrás de cámaras de Amigos y Vinilos en estudio",
     "projects.amigosCategory": "04 · Formato editorial",
     "projects.amigosRole": "Producción · Dirección artística y montaje",
+    "projects.amigosLinkLabel": "Ver proyecto Amigos y Vinilos",
+    "projects.introcreaAlt":
+      "Set de Podcast Introcrea con dos participantes e iluminación rosa y verde",
+    "projects.introcreaCategory": "03 · Podcast · Producción audiovisual",
+    "projects.introcreaRole": "Producción técnica · Iluminación · Montaje",
+    "projects.introcreaLinkLabel": "Ver proyecto Podcast Introcrea",
     "profile.kicker": "Acerca de mí",
     "profile.title": ["Entre lo técnico", "y lo visual"],
     "profile.body":
@@ -55,6 +68,8 @@ const translations = {
     "profile.postTitle": "Postproducción",
     "profile.postBody":
       "Photoshop, After Effects, DaVinci Resolve y creación de espacios con Unity.",
+    "profile.toolsKicker": "Herramientas",
+    "profile.toolsTitle": "Flujo técnico y creativo",
     "experience.kicker": "Experiencia",
     "experience.title": ["De la idea", "al espacio"],
     "experience.cenizaCategory": "Producción ejecutiva · Audiovisual · Técnica",
@@ -65,6 +80,13 @@ const translations = {
     "experience.culebrasRole": "Asistente de producción y arte",
     "experience.agendaCategory": "Contenido digital · Edición",
     "experience.agendaRole": "Producción · Edición",
+    "experience.agendaLinkLabel": "Ver proyecto Agendavaciaalmallena",
+    "experience.tuPlonCategory": "Contenido digital · Producción audiovisual",
+    "experience.tuPlonRole": "Producción · Edición",
+    "experience.tuPlonLinkLabel": "Ver proyecto Tu Plon Stereo",
+    "experience.introcreaCategory": "Podcast · Producción audiovisual",
+    "experience.introcreaRole": "Producción técnica · Iluminación · Montaje",
+    "experience.introcreaLinkLabel": "Ver proyecto Podcast Introcrea",
     "experience.side": "PREPRODUCCIÓN / SET / POST",
     "contact.kicker": "¿Tienes una idea?",
     "contact.title": ["Trabajemos", "juntos"],
@@ -72,7 +94,10 @@ const translations = {
     "contact.whatsappLabel": "Hablemos por WhatsApp",
     "contact.email": "Correo",
     "contact.emailLabel": "Escribir un correo a Bernardo Franco",
-    "contact.instagram": "Instagram",
+    "contact.downloadCv": "Descargar CV",
+    "contact.downloadCvLabel": "Descargar CV de Bernardo Franco en PDF",
+    "contact.linkedin": "LinkedIn",
+    "contact.linkedinLabel": "Ver perfil de Bernardo Franco en LinkedIn",
     "contact.backToTop": "Volver al inicio",
   },
   en: {
@@ -101,20 +126,33 @@ const translations = {
     "projects.note":
       "Production, lighting and atmosphere building for music, culture and audiovisual content.",
     "projects.cenizaAlt":
-      "Ceniza audiovisual production lit in red, blue and green",
+      "Portrait of a woman under red lighting for a Ceniza production",
     "projects.cenizaCategory": "01 · Audiovisual production",
     "projects.cenizaRole": "Co-founder · Technical production and lighting",
+    "projects.cenizaLinkLabel": "View Ceniza project",
     "projects.superRayoAlt":
-      "Super Rayo stage and booth with red and blue lighting",
+      "Super Rayo booth during an event with red and blue lighting",
     "projects.superRayoCategory": "02 · Music and culture",
     "projects.superRayoRole": "Booth manager · Technical production",
+    "projects.superRayoLinkLabel": "View Super Rayo project",
+    "projects.agendaAlt": "Agendavaciaalmallena presenter in a Bogotá park",
+    "projects.agendaCategory": "03 · Digital content",
+    "projects.agendaRole": "Production · Editing",
+    "projects.agendaLinkLabel": "View Agendavaciaalmallena project",
     "projects.culebrasAlt":
       "Stage installation with plants, neon and colored lighting",
     "projects.culebrasCategory": "03 · Stage installation",
     "projects.culebrasRole": "Art assistance · Production and setup",
-    "projects.amigosAlt": "Amigos y Vinilos set lit in violet tones",
+    "projects.culebrasLinkLabel": "View Todas las culebras son serpientes project",
+    "projects.amigosAlt": "Behind-the-scenes studio production for Amigos y Vinilos",
     "projects.amigosCategory": "04 · Editorial format",
     "projects.amigosRole": "Production · Art direction and setup",
+    "projects.amigosLinkLabel": "View Amigos y Vinilos project",
+    "projects.introcreaAlt":
+      "Podcast Introcrea set with two participants and pink and green lighting",
+    "projects.introcreaCategory": "03 · Podcast · Audiovisual production",
+    "projects.introcreaRole": "Technical production · Lighting · Setup",
+    "projects.introcreaLinkLabel": "View Podcast Introcrea project",
     "profile.kicker": "About me",
     "profile.title": ["Between technical", "and visual"],
     "profile.body":
@@ -131,6 +169,8 @@ const translations = {
     "profile.postTitle": "Post-production",
     "profile.postBody":
       "Photoshop, After Effects, DaVinci Resolve and spatial creation with Unity.",
+    "profile.toolsKicker": "Tools",
+    "profile.toolsTitle": "Technical and creative workflow",
     "experience.kicker": "Experience",
     "experience.title": ["From the idea", "to the space"],
     "experience.cenizaCategory": "Executive production · Audiovisual · Technical",
@@ -141,6 +181,13 @@ const translations = {
     "experience.culebrasRole": "Production and art assistant",
     "experience.agendaCategory": "Digital content · Editing",
     "experience.agendaRole": "Production · Editing",
+    "experience.agendaLinkLabel": "View Agendavaciaalmallena project",
+    "experience.tuPlonCategory": "Digital content · Audiovisual production",
+    "experience.tuPlonRole": "Production · Editing",
+    "experience.tuPlonLinkLabel": "View Tu Plon Stereo project",
+    "experience.introcreaCategory": "Podcast · Audiovisual production",
+    "experience.introcreaRole": "Technical production · Lighting · Setup",
+    "experience.introcreaLinkLabel": "View Podcast Introcrea project",
     "experience.side": "PRE-PRODUCTION / SET / POST",
     "contact.kicker": "Have an idea?",
     "contact.title": ["Let's work", "together"],
@@ -148,7 +195,10 @@ const translations = {
     "contact.whatsappLabel": "Get in touch on WhatsApp",
     "contact.email": "Email",
     "contact.emailLabel": "Write an email to Bernardo Franco",
-    "contact.instagram": "Instagram",
+    "contact.downloadCv": "Download CV",
+    "contact.downloadCvLabel": "Download Bernardo Franco's CV as a PDF",
+    "contact.linkedin": "LinkedIn",
+    "contact.linkedinLabel": "View Bernardo Franco's LinkedIn profile",
     "contact.backToTop": "Back to top",
   },
 };
@@ -259,6 +309,8 @@ const heroCopy = document.querySelector(".hero-copy");
 const heroMark = document.querySelector(".monogram");
 const heroOrbit = document.querySelector(".orbit");
 const heroPerson = document.querySelector(".visual img");
+const profileSection = document.querySelector(".profile-section");
+const profileOrbit = document.querySelector(".profile-orbit");
 const projectsHeading = document.querySelector(".projects-heading");
 const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -385,6 +437,21 @@ if (window.gsap && window.ScrollTrigger) {
       stagger,
     });
 
+    const toolStack = document.querySelector(".tool-stack");
+    revealGroup(
+      toolStack,
+      [
+        toolStack?.querySelector(".tool-stack__header"),
+        ...(toolStack?.querySelectorAll("li") || []),
+      ],
+      {
+        start: "top 88%",
+        y: distance,
+        duration,
+        stagger,
+      },
+    );
+
     const experienceHeading = document.querySelector(".experience-heading");
     revealGroup(
       document.querySelector(".experience-section"),
@@ -399,7 +466,7 @@ if (window.gsap && window.ScrollTrigger) {
     );
 
     const experienceList = document.querySelector(".experience-list");
-    revealGroup(experienceList, experienceList?.querySelectorAll("article") || [], {
+    revealGroup(experienceList, experienceList?.querySelectorAll(".experience-entry") || [], {
       start: "top 83%",
       y: distance,
       duration,
@@ -433,7 +500,7 @@ if (window.gsap && window.ScrollTrigger) {
         trigger: hero,
         start: "top top",
         end: "bottom top",
-        scrub: 1.15,
+        scrub: 1.45,
         invalidateOnRefresh: true,
       },
     });
@@ -444,11 +511,28 @@ if (window.gsap && window.ScrollTrigger) {
       .to(heroOrbit, { yPercent: 5.5, rotation: 1.5, transformOrigin: "50% 50%" }, 0)
       .to(heroPerson, { yPercent: 2.4, scale: 1.025, transformOrigin: "50% 100%" }, 0);
 
+    gsap.to(profileOrbit, {
+      yPercent: 5.5,
+      rotation: -1.5,
+      transformOrigin: "50% 50%",
+      ease: "none",
+      scrollTrigger: {
+        id: "profile-orbit-depth",
+        trigger: profileSection,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1.45,
+        invalidateOnRefresh: true,
+        onEnter: () => playDotArrival(profileOrbit),
+        onLeaveBack: () => resetDotArrival(profileOrbit),
+      },
+    });
+
     createSectionReveals();
 
     projectCards.forEach((card, index) => {
       const media = card.querySelector(".project-media");
-      const image = card.querySelector(".project-media img");
+      const image = card.querySelector(".project-media img, .project-media video");
       const meta = card.querySelector(".project-meta");
       const reveal = gsap.timeline({
         delay: index % 2 === 0 ? 0 : 0.16,
@@ -525,7 +609,7 @@ if (window.gsap && window.ScrollTrigger) {
 
     return () => {
       hoverCleanups.forEach((cleanup) => cleanup());
-      gsap.killTweensOf(".project-media img");
+      gsap.killTweensOf(".project-media img, .project-media video");
     };
   });
 
@@ -543,11 +627,39 @@ if (window.gsap && window.ScrollTrigger) {
       },
     });
 
+    gsap.to(heroOrbit, {
+      yPercent: 2.8,
+      rotation: 0.8,
+      transformOrigin: "50% 50%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: hero,
+        start: "top top",
+        end: "bottom top",
+        scrub: 1.15,
+      },
+    });
+
+    gsap.to(profileOrbit, {
+      yPercent: 3.5,
+      rotation: -0.8,
+      transformOrigin: "50% 50%",
+      ease: "none",
+      scrollTrigger: {
+        trigger: profileSection,
+        start: "top bottom",
+        end: "bottom top",
+        scrub: 1.15,
+        onEnter: () => playDotArrival(profileOrbit),
+        onLeaveBack: () => resetDotArrival(profileOrbit),
+      },
+    });
+
     createSectionReveals(true);
 
     projectCards.forEach((card) => {
       const media = card.querySelector(".project-media");
-      const image = card.querySelector(".project-media img");
+      const image = card.querySelector(".project-media img, .project-media video");
       const meta = card.querySelector(".project-meta");
       const reveal = gsap.timeline({
         defaults: { ease: motionEase },
@@ -578,11 +690,11 @@ if (window.gsap && window.ScrollTrigger) {
 
   motion.add("(prefers-reduced-motion: reduce)", () => {
     gsap.set(
-      [heroCopy, heroMark, heroOrbit, heroPerson, projectsHeading, ...projectCards],
+      [heroCopy, heroMark, heroOrbit, heroPerson, profileOrbit, projectsHeading, ...projectCards],
       { clearProps: "all" },
     );
     gsap.set(
-      ".project-media, .project-media img, .project-meta, .project-meta > *, .projects-heading > *, .profile-intro > *, .capabilities article, .experience-heading > *, .experience-list article, .contact-topline, .contact-main > *, .contact-details a",
+      ".project-media, .project-media img, .project-media video, .project-meta, .project-meta > *, .projects-heading > *, .profile-intro > *, .capabilities article, .experience-heading > *, .experience-entry, .contact-topline, .contact-main > *, .contact-details a",
       {
         autoAlpha: 1,
         clearProps: "transform,clipPath,visibility,opacity",

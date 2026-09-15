@@ -13,7 +13,7 @@
       type="image/svg+xml"
       href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23090909'/%3E%3Ctext x='7' y='43' fill='white' font-family='Arial' font-size='34' font-weight='900'%3EBF%3C/text%3E%3Ccircle cx='53' cy='48' r='6' fill='%23ff4a1c'/%3E%3C/svg%3E"
     />
-    <link rel="stylesheet" href="./styles.css?v=experience-number-92" />
+    <link rel="stylesheet" href="./styles.css?v=featured-three" />
   </head>
   <body>
     <main class="hero" id="inicio">
@@ -80,7 +80,7 @@
           <path d="M 25.75 8 A 48.5 48.5 0 1 1 18.8 87.2"></path>
         </svg>
         <span class="monogram">B</span>
-        <img src="./assets/bernardo-transparent.png" alt="" />
+        <img src="./assets/bernardo-transparent-real.png" alt="" />
       </div>
 
       <p class="disciplines" data-i18n-lines="hero.disciplines">
@@ -114,78 +114,92 @@
 
       <div class="projects-grid">
         <article class="project-card project-card--wide">
-          <figure class="project-media">
-            <img
-              src="./assets/projects/ceniza.jpg"
-              alt="Producción audiovisual de Ceniza iluminada en rojo, azul y verde"
-              data-i18n-alt="projects.cenizaAlt"
-            />
-          </figure>
-          <div class="project-meta">
-            <p data-i18n="projects.cenizaCategory">01 · Producción audiovisual</p>
-            <h3>Ceniza</h3>
-            <span data-i18n="projects.cenizaRole">Cofundador · Producción técnica e iluminación</span>
-          </div>
+          <a
+            class="project-card__link"
+            href="./project.html?project=ceniza"
+            aria-label="Ver proyecto Ceniza"
+            data-i18n-aria="projects.cenizaLinkLabel"
+          >
+            <figure class="project-media project-media--ceniza">
+              <img
+                src="./assets/project-media/ceniza/landing-cover-v3.png"
+                alt="Retrato de una mujer bajo iluminación roja para una producción de Ceniza"
+                data-i18n-alt="projects.cenizaAlt"
+              />
+            </figure>
+            <div class="project-meta">
+              <p data-i18n="projects.cenizaCategory">01 · Producción audiovisual</p>
+              <h3>Ceniza</h3>
+              <span data-i18n="projects.cenizaRole">Cofundador · Producción técnica e iluminación</span>
+              <i aria-hidden="true"></i>
+            </div>
+          </a>
         </article>
 
         <article class="project-card project-card--tall">
-          <figure class="project-media">
-            <img
-              src="./assets/projects/super-rayo.jpg"
-              alt="Escenario y cabina de Super Rayo con iluminación roja y azul"
-              data-i18n-alt="projects.superRayoAlt"
-            />
-          </figure>
-          <div class="project-meta">
-            <p data-i18n="projects.superRayoCategory">02 · Música y cultura</p>
-            <h3>Super Rayo</h3>
-            <span data-i18n="projects.superRayoRole">Jefe de cabina · Producción técnica</span>
-          </div>
+          <a
+            class="project-card__link"
+            href="./project.html?project=super-rayo"
+            aria-label="Ver proyecto Super Rayo"
+            data-i18n-aria="projects.superRayoLinkLabel"
+          >
+            <figure class="project-media project-media--super-rayo">
+              <img
+                src="./assets/project-media/super-rayo/landing-cover-v2.jpg"
+                alt="Cabina de Super Rayo durante un evento con iluminación roja y azul"
+                data-i18n-alt="projects.superRayoAlt"
+              />
+            </figure>
+            <div class="project-meta">
+              <p data-i18n="projects.superRayoCategory">02 · Música y cultura</p>
+              <h3>Super Rayo</h3>
+              <span data-i18n="projects.superRayoRole">Jefe de cabina · Producción técnica</span>
+              <i aria-hidden="true"></i>
+            </div>
+          </a>
         </article>
 
-        <article class="project-card project-card--tall">
-          <figure class="project-media">
-            <img
-              src="./assets/projects/culebras.jpg"
-              alt="Instalación escénica con vegetación, neón y luces de color"
-              data-i18n-alt="projects.culebrasAlt"
-            />
-          </figure>
-          <div class="project-meta">
-            <p data-i18n="projects.culebrasCategory">03 · Instalación escénica</p>
-            <h3>Todas las culebras<br />son serpientes</h3>
-            <span data-i18n="projects.culebrasRole">Asistencia de arte · Producción y montaje</span>
-          </div>
+        <article class="project-card project-card--feature">
+          <a
+            class="project-card__link"
+            href="./project.html?project=podcast-introcrea"
+            aria-label="Ver proyecto Podcast Introcrea"
+            data-i18n-aria="projects.introcreaLinkLabel"
+          >
+            <figure class="project-media project-media--introcrea">
+              <img
+                src="./assets/project-media/podcast-introcrea/landing-cover-hq.png"
+                alt="Set de Podcast Introcrea con dos participantes e iluminación rosa y verde"
+                data-i18n-alt="projects.introcreaAlt"
+              />
+            </figure>
+            <div class="project-meta">
+              <p data-i18n="projects.introcreaCategory">03 · Podcast · Producción audiovisual</p>
+              <h3>Podcast Introcrea</h3>
+              <span data-i18n="projects.introcreaRole">Producción técnica · Iluminación · Montaje</span>
+              <i aria-hidden="true"></i>
+            </div>
+          </a>
         </article>
 
-        <article class="project-card project-card--wide project-card--last">
-          <figure class="project-media">
-            <img
-              src="./assets/projects/amigos-vinilos.jpg"
-              alt="Set de Amigos y Vinilos iluminado en tonos violetas"
-              data-i18n-alt="projects.amigosAlt"
-            />
-          </figure>
-          <div class="project-meta">
-            <p data-i18n="projects.amigosCategory">04 · Formato editorial</p>
-            <h3>Amigos y Vinilos</h3>
-            <span data-i18n="projects.amigosRole">Producción · Dirección artística y montaje</span>
-          </div>
-        </article>
       </div>
     </section>
 
     <section class="profile-section" id="perfil" aria-labelledby="profile-title">
+      <svg class="profile-orbit" viewBox="0 0 100 100" focusable="false" aria-hidden="true">
+        <circle cx="50" cy="50" r="48.5"></circle>
+      </svg>
       <div class="profile-intro">
         <p class="section-kicker" data-i18n="profile.kicker">Acerca de mí</p>
         <h2 id="profile-title" data-i18n-lines="profile.title">
           Entre lo técnico<br />y lo visual<span>.</span>
         </h2>
-        <p data-i18n="profile.body">
+        <p class="profile-summary" data-i18n="profile.body">
           Trabajo en la intersección de la producción, la iluminación, el montaje
           y la dirección visual. Convierto una idea en un sistema ejecutable sin
           perder su intención estética.
         </p>
+
       </div>
 
       <div class="capabilities" aria-label="Capacidades" data-i18n-aria="profile.capabilitiesLabel">
@@ -210,9 +224,48 @@
           <p data-i18n="profile.postBody">Photoshop, After Effects, DaVinci Resolve y creación de espacios con Unity.</p>
         </article>
       </div>
+
+      <div class="tool-stack" aria-labelledby="tool-stack-title">
+        <header class="tool-stack__header">
+          <p class="section-kicker" data-i18n="profile.toolsKicker">Herramientas</p>
+          <p id="tool-stack-title" data-i18n="profile.toolsTitle">
+            Flujo técnico y creativo
+          </p>
+        </header>
+        <ul class="tool-stack__list">
+          <li>
+            <span class="tool-icon tool-icon--unity" aria-hidden="true">
+              <svg viewBox="0 0 64 64" focusable="false">
+                <path d="M21 13 34 6l15 9-4 17 5 16-16 9-13-8-17-3V27l12-10 5-4Z" />
+                <path d="m21 13 13 11 15-9M34 24v19m0 0 16 5M34 43 21 49M16 17l5 14L4 27m17 4 13-7 11 8" />
+              </svg>
+            </span>
+            <span>Unity</span>
+          </li>
+          <li>
+            <span class="tool-icon tool-icon--resolve" aria-hidden="true">
+              <svg viewBox="0 0 64 64" focusable="false">
+                <circle cx="32" cy="18" r="12" />
+                <circle cx="20" cy="39" r="12" />
+                <circle cx="44" cy="39" r="12" />
+                <circle cx="32" cy="32" r="7" />
+              </svg>
+            </span>
+            <span>DaVinci Resolve</span>
+          </li>
+          <li>
+            <span class="tool-icon tool-icon--adobe" aria-hidden="true">Ae</span>
+            <span>After Effects</span>
+          </li>
+          <li>
+            <span class="tool-icon tool-icon--adobe" aria-hidden="true">Ps</span>
+            <span>Photoshop</span>
+          </li>
+        </ul>
+      </div>
     </section>
 
-    <section class="experience-section" aria-labelledby="experience-title">
+    <section class="experience-section" id="experiencia" aria-labelledby="experience-title">
       <header class="experience-heading">
         <p class="section-kicker" data-i18n="experience.kicker">Experiencia</p>
         <h2 id="experience-title" data-i18n-lines="experience.title">
@@ -221,26 +274,42 @@
       </header>
 
       <div class="experience-list">
-        <article>
+        <a class="experience-entry" href="./project.html?project=ceniza" aria-label="Ver proyecto Ceniza" data-i18n-aria="projects.cenizaLinkLabel">
           <p data-i18n="experience.cenizaCategory">Producción ejecutiva · Audiovisual · Técnica</p>
           <h3>Ceniza</h3>
           <span data-i18n="experience.cenizaRole">Cofundador</span>
-        </article>
-        <article>
+          <i aria-hidden="true"></i>
+        </a>
+        <a class="experience-entry" href="./project.html?project=super-rayo" aria-label="Ver proyecto Super Rayo" data-i18n-aria="projects.superRayoLinkLabel">
           <p data-i18n="experience.superRayoCategory">Música · Escena · Cultura independiente</p>
           <h3>Super Rayo</h3>
           <span data-i18n="experience.superRayoRole">Jefe de cabina · Productor técnico</span>
-        </article>
-        <article>
+          <i aria-hidden="true"></i>
+        </a>
+        <a class="experience-entry" href="./project.html?project=culebras" aria-label="Ver proyecto Todas las culebras son serpientes" data-i18n-aria="projects.culebrasLinkLabel">
           <p data-i18n="experience.culebrasCategory">Dirección de arte · Montaje</p>
           <h3>Todas las culebras son serpientes</h3>
           <span data-i18n="experience.culebrasRole">Asistente de producción y arte</span>
-        </article>
-        <article>
+          <i aria-hidden="true"></i>
+        </a>
+        <a class="experience-entry" href="./project.html?project=agendavacialmallena" aria-label="Ver proyecto Agendavaciaalmallena" data-i18n-aria="experience.agendaLinkLabel">
           <p data-i18n="experience.agendaCategory">Contenido digital · Edición</p>
-          <h3>Agendavacialmallena</h3>
+          <h3>Agendavaciaalmallena</h3>
           <span data-i18n="experience.agendaRole">Producción · Edición</span>
-        </article>
+          <i aria-hidden="true"></i>
+        </a>
+        <a class="experience-entry" href="./project.html?project=tu-plon-stereo" aria-label="Ver proyecto Tu Plon Stereo" data-i18n-aria="experience.tuPlonLinkLabel">
+          <p data-i18n="experience.tuPlonCategory">Contenido digital · Producción audiovisual</p>
+          <h3>Tu Plon Stereo</h3>
+          <span data-i18n="experience.tuPlonRole">Producción · Edición</span>
+          <i aria-hidden="true"></i>
+        </a>
+        <a class="experience-entry" href="./project.html?project=podcast-introcrea" aria-label="Ver proyecto Podcast Introcrea" data-i18n-aria="experience.introcreaLinkLabel">
+          <p data-i18n="experience.introcreaCategory">Podcast · Producción audiovisual</p>
+          <h3>Podcast Introcrea</h3>
+          <span data-i18n="experience.introcreaRole">Producción técnica · Iluminación · Montaje</span>
+          <i aria-hidden="true"></i>
+        </a>
       </div>
 
       <p class="experience-side" data-i18n="experience.side">PREPRODUCCIÓN / SET / POST</p>
@@ -282,13 +351,20 @@
           Correo
         </a>
         <a
-          href="https://www.instagram.com/bercho92/"
+          href="./assets/documents/bernardo-franco-cv-portfolio.pdf"
+          download="Bernardo-Franco-CV-Portafolio.pdf"
+          aria-label="Descargar CV de Bernardo Franco en PDF"
+          data-i18n="contact.downloadCv"
+          data-i18n-aria="contact.downloadCvLabel"
+        >Descargar CV</a>
+        <a
+          href="https://www.linkedin.com/in/bernardo-franco-echeverri-78511a352/"
           target="_blank"
           rel="noreferrer"
-          data-i18n="contact.instagram"
-        >
-          Instagram
-        </a>
+          aria-label="Ver perfil de Bernardo Franco en LinkedIn"
+          data-i18n="contact.linkedin"
+          data-i18n-aria="contact.linkedinLabel"
+        >LinkedIn</a>
         <a href="https://www.cenizaproducciones.com/" target="_blank" rel="noreferrer">Ceniza Producciones</a>
       </div>
 
@@ -304,6 +380,6 @@
 
     <script src="./assets/vendor/gsap.min.js?v=3.15.0"></script>
     <script src="./assets/vendor/ScrollTrigger.min.js?v=3.15.0"></script>
-    <script src="./script.js?v=email-compose-fix"></script>
+    <script src="./script.js?v=orbit-slow"></script>
   </body>
 </html>
