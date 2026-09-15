@@ -67,7 +67,7 @@ const translations = {
       "Lectura conceptual, referencias, composición espacial y coherencia estética.",
     "profile.postTitle": "Postproducción",
     "profile.postBody":
-      "Photoshop, After Effects, DaVinci Resolve y creación de espacios con Unity.",
+      "Edición, montaje, tratamiento de color y acabado visual para dar ritmo y coherencia a cada pieza.",
     "profile.toolsKicker": "Herramientas",
     "profile.toolsTitle": "Flujo técnico y creativo",
     "experience.kicker": "Experiencia",
@@ -168,7 +168,7 @@ const translations = {
       "Conceptual interpretation, references, spatial composition and aesthetic consistency.",
     "profile.postTitle": "Post-production",
     "profile.postBody":
-      "Photoshop, After Effects, DaVinci Resolve and spatial creation with Unity.",
+      "Editing, sequencing, color treatment and visual finishing to give each piece rhythm and coherence.",
     "profile.toolsKicker": "Tools",
     "profile.toolsTitle": "Technical and creative workflow",
     "experience.kicker": "Experience",

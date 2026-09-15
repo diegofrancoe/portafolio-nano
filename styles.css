@@ -324,11 +324,13 @@ h1 {
   left: -3vw;
   bottom: 0;
   z-index: 2;
+  opacity: 1;
   width: auto;
   height: 92svh;
   max-width: none;
   object-fit: contain;
   object-position: left bottom;
+  filter: saturate(0.92) contrast(0.97);
   will-change: transform;
 }
 
