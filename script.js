@@ -209,12 +209,27 @@ const languageStorageKey = "bernardo-portfolio-language";
 let currentLanguage = "es";
 
 const getStoredLanguage = () => {
+  const urlLanguage = new URLSearchParams(window.location.search).get("lang");
+  if (urlLanguage === "en" || urlLanguage === "es") return urlLanguage;
+
   try {
     const storedLanguage = localStorage.getItem(languageStorageKey);
     return storedLanguage === "en" || storedLanguage === "es" ? storedLanguage : "es";
   } catch {
     return "es";
   }
+};
+
+const syncLanguageNavigation = (language) => {
+  const currentUrl = new URL(window.location.href);
+  currentUrl.searchParams.set("lang", language);
+  window.history.replaceState(null, "", currentUrl.href);
+
+  document.querySelectorAll('a[href*="project.html"]').forEach((link) => {
+    const targetUrl = new URL(link.getAttribute("href"), window.location.href);
+    targetUrl.searchParams.set("lang", language);
+    link.setAttribute("href", `${targetUrl.pathname.split("/").pop()}${targetUrl.search}${targetUrl.hash}`);
+  });
 };
 
 const updateMenuLabel = (isOpen) => {
@@ -265,6 +280,7 @@ const setLanguage = (language, { persist = true } = {}) => {
   languageButtons.forEach((button) => {
     button.setAttribute("aria-pressed", String(button.dataset.language === language));
   });
+  syncLanguageNavigation(language);
   updateMenuLabel(document.querySelector(".menu-toggle")?.getAttribute("aria-expanded") === "true");
 
   if (persist) {

@@ -1,14 +1,15 @@
-const imageMedia = (src, es, en, position = "50% 50%") => ({ type: "image", src, position, alt: { es, en } });
+const imageMedia = (src, es, en, position = "50% 50%", layout = "") => ({ type: "image", src, position, layout, alt: { es, en } });
 const videoMedia = (src, es, en, mime = "video/mp4") => ({ type: "video", src, mime, alt: { es, en } });
 
 const projects = {
   ceniza: {
     number: "01", title: "Ceniza", monogram: "C",
+    website: "https://www.cenizaproducciones.com/",
     media: [
-      imageMedia("./assets/project-media/ceniza/03.jpg", "Retrato iluminado en rojo para una producción de Ceniza", "Red-lit portrait for a Ceniza production", "50% 16%"),
+      imageMedia("./assets/project-media/ceniza/cover-portrait-hq.png", "Retrato de estudio con iluminación cálida para una producción de Ceniza", "Warm studio portrait for a Ceniza production", "50% 12%"),
       imageMedia("./assets/project-media/ceniza/04.jpg", "Retrato iluminado en azul durante una producción de Ceniza", "Blue-lit portrait during a Ceniza production"),
       imageMedia("./assets/project-media/ceniza/01.jpg", "Preparación del set para una producción de Ceniza", "Set preparation for a Ceniza production"),
-      imageMedia("./assets/project-media/ceniza/02.jpg", "Montaje técnico de iluminación de Ceniza", "Ceniza technical lighting setup"),
+      imageMedia("./assets/project-media/ceniza/gallery-atmosferas-minimal-hq.png", "Luz, diseño, experiencia y atmósferas", "Light, design, experience and atmospheres", "0% 50%", "compact"),
     ],
     es: {
       category: "Producción audiovisual",
@@ -16,6 +17,7 @@ const projects = {
       role: "Cofundador · Producción técnica e iluminación",
       description: "Ceniza es una productora especializada en iluminación profesional y producción técnica para contenido audiovisual.",
       scope: ["Preproducción", "Iluminación", "Producción técnica", "Entrega audiovisual"],
+      websiteLabel: "Visitar Ceniza Producciones",
     },
     en: {
       category: "Audiovisual production",
@@ -23,12 +25,13 @@ const projects = {
       role: "Co-founder · Technical production and lighting",
       description: "Ceniza is a production company specializing in professional lighting and technical production for audiovisual content.",
       scope: ["Pre-production", "Lighting", "Technical production", "Audiovisual delivery"],
+      websiteLabel: "Visit Ceniza Producciones",
     },
   },
   "super-rayo": {
     number: "02", title: "Super Rayo", monogram: "SR",
     media: [
-      imageMedia("./assets/project-media/super-rayo/01.jpg", "Escenario de Super Rayo iluminado en rojo y azul", "Super Rayo stage lit in red and blue"),
+      imageMedia("./assets/project-media/super-rayo/hero-bateria-centrada-hq.png", "Batería de Super Rayo centrada entre luces rojas y azules", "Super Rayo drum kit centered between red and blue lights"),
       imageMedia("./assets/project-media/super-rayo/02.jpg", "Montaje de una banda de jazz en Super Rayo", "Jazz band setup at Super Rayo"),
       imageMedia("./assets/project-media/super-rayo/03.jpg", "Cabina técnica de Super Rayo", "Super Rayo technical booth"),
     ],
@@ -50,9 +53,9 @@ const projects = {
   culebras: {
     number: "03", title: "Todas las culebras son serpientes", monogram: "TC",
     media: [
-      imageMedia("./assets/project-media/culebras/01.jpg", "Instalación escénica con vegetación y luz verde", "Scenic installation with plants and green light"),
-      videoMedia("./assets/project-media/culebras/04.mp4", "Recorrido en video por Todas las culebras son serpientes", "Video walkthrough of Todas las culebras son serpientes"),
-      videoMedia("./assets/project-media/culebras/05.mp4", "Atmósfera de luz y vegetación de la instalación", "Lighting and plant atmosphere from the installation"),
+      imageMedia("./assets/project-media/culebras/hero-neon-hq.png", "Letrero de neón de Todas las culebras son serpientes entre vegetación", "Todas las culebras son serpientes neon sign among tropical plants"),
+      imageMedia("./assets/project-media/culebras/gallery-vegetacion-hq.png", "Vegetación iluminada alrededor de las escaleras de la instalación", "Illuminated plants surrounding the installation staircase"),
+      imageMedia("./assets/project-media/culebras/gallery-serpiente-hq.png", "Serpiente de mosaico iluminada sobre la escalera", "Illuminated mosaic serpent above the staircase"),
     ],
     es: {
       category: "Instalación escénica",
@@ -173,11 +176,31 @@ const interfaceCopy = {
 };
 
 const getStoredLanguage = () => {
+  const urlLanguage = new URLSearchParams(window.location.search).get("lang");
+  if (urlLanguage === "en" || urlLanguage === "es") return urlLanguage;
+
   try {
     return localStorage.getItem(languageStorageKey) === "en" ? "en" : "es";
   } catch {
     return "es";
   }
+};
+
+const syncLanguageNavigation = (language, nextKey) => {
+  const currentUrl = new URL(window.location.href);
+  currentUrl.searchParams.set("lang", language);
+  window.history.replaceState(null, "", currentUrl.href);
+
+  const homeUrl = `./index.html?lang=${language}`;
+  const brandLink = document.querySelector(".project-topbar .brand");
+  const backLink = document.querySelector(".project-back");
+  const contactLink = document.querySelector(".project-footer a");
+  if (brandLink) brandLink.href = `${homeUrl}#inicio`;
+  if (backLink) backLink.href = `${homeUrl}#proyectos`;
+  if (contactLink) contactLink.href = `${homeUrl}#contacto`;
+
+  const nextLink = document.querySelector("[data-next-link]");
+  if (nextLink) nextLink.href = `./project.html?project=${nextKey}&lang=${language}`;
 };
 
 const getProjectTitle = (item, language) => typeof item.title === "string" ? item.title : item.title[language];
@@ -226,7 +249,7 @@ const renderMedia = (language) => {
     gallery.hidden = galleryItems.length === 0;
     galleryList.replaceChildren(...galleryItems.map((item) => {
       const figure = document.createElement("figure");
-      figure.className = `project-gallery__item project-gallery__item--${item.type}`;
+      figure.className = `project-gallery__item project-gallery__item--${item.type}${item.layout ? ` project-gallery__item--${item.layout}` : ""}`;
       figure.append(createMediaElement(item, language));
       return figure;
     }));
@@ -307,8 +330,20 @@ const renderProject = (language) => {
     }));
   }
 
-  const nextLink = document.querySelector("[data-next-link]");
-  if (nextLink) nextLink.href = `./project.html?project=${nextKey}`;
+  const websiteLink = document.querySelector("[data-project-website]");
+  if (websiteLink) {
+    websiteLink.hidden = !project.website;
+    if (project.website) {
+      websiteLink.href = project.website;
+      websiteLink.setAttribute("aria-label", localized.websiteLabel);
+      setText("[data-project-website-label]", localized.websiteLabel);
+    } else {
+      websiteLink.removeAttribute("href");
+      websiteLink.removeAttribute("aria-label");
+    }
+  }
+
+  syncLanguageNavigation(language, nextKey);
   setText("[data-next-title]", getProjectTitle(nextProject, language));
   document.querySelectorAll("[data-language]").forEach((button) => { button.setAttribute("aria-pressed", String(button.dataset.language === language)); });
   try { localStorage.setItem(languageStorageKey, language); } catch { /* Keep the current visit language. */ }
