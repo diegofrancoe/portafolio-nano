@@ -211,6 +211,7 @@ const languageButtons = [...document.querySelectorAll("[data-language]")];
 const metaDescription = document.querySelector('meta[name="description"]');
 const openGraphTitle = document.querySelector('meta[property="og:title"]');
 const openGraphDescription = document.querySelector('meta[property="og:description"]');
+const cvDownloadLink = document.querySelector("[data-cv-download]");
 const languageStorageKey = "bernardo-portfolio-language";
 let currentLanguage = "es";
 
@@ -257,6 +258,17 @@ const setLanguage = (language, { persist = true } = {}) => {
   metaDescription?.setAttribute("content", copy.metaDescription);
   openGraphTitle?.setAttribute("content", copy.metaTitle);
   openGraphDescription?.setAttribute("content", copy.metaDescription);
+
+  if (cvDownloadLink) {
+    const isEnglish = language === "en";
+    cvDownloadLink.href = isEnglish
+      ? "./assets/documents/bernardo-franco-cv-en.pdf?v=20260924-icons-en"
+      : "./assets/documents/bernardo-franco-cv.pdf?v=20260924-icons-en";
+    cvDownloadLink.setAttribute(
+      "download",
+      isEnglish ? "Bernardo-Franco-CV-EN.pdf" : "Bernardo-Franco-CV-ES.pdf",
+    );
+  }
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = copy[element.dataset.i18n];
