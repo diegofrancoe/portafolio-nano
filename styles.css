@@ -142,7 +142,7 @@ a {
 h1 {
   max-width: 10ch;
   margin: clamp(1.5rem, 3vh, 2rem) 0 0;
-  font-size: clamp(4.2rem, max(7.15vw, 12vh), 8.8rem);
+  font-size: clamp(4.2rem, min(7.15vw, 15.5svh), 8.8rem);
   font-weight: 700;
   letter-spacing: -0.075em;
   line-height: 0.82;
@@ -269,10 +269,10 @@ h1 {
 .monogram {
   position: absolute;
   top: 21.5%;
-  left: 45.5%;
+  left: 48%;
   z-index: 0;
   color: var(--accent);
-  font-size: clamp(24rem, 40.5vw, 48rem);
+  font-size: clamp(24rem, min(44vw, 70svh), 42rem);
   font-weight: 900;
   letter-spacing: -0.12em;
   line-height: 0.82;
@@ -282,9 +282,9 @@ h1 {
 .orbit {
   position: absolute;
   top: 13.5%;
-  left: 64%;
+  left: clamp(66vw, calc(76vw - 12svh), 71vw);
   z-index: 1;
-  width: min(28.5vw, 540px);
+  width: min(25vw, 45svh, 33.75rem);
   aspect-ratio: 1;
   will-change: transform;
 }
@@ -313,7 +313,7 @@ h1 {
 
 .visual img {
   position: absolute;
-  left: -3vw;
+  left: calc(50vw - 72svh);
   bottom: 0;
   z-index: 2;
   opacity: 1;
@@ -1319,6 +1319,72 @@ h1 {
 
   .contact-details a:nth-child(2) {
     border-top: 0;
+  }
+}
+
+@media (min-width: 600px) and (max-width: 820px) {
+  .hero-copy {
+    position: absolute;
+    top: 20.7%;
+    left: 3.25vw;
+    width: 52vw;
+    padding: 0;
+  }
+
+  .eyebrow {
+    margin: 0 0 0 0.25vw;
+  }
+
+  h1 {
+    max-width: 9ch;
+    margin-top: clamp(1.35rem, 2.8vh, 1.75rem);
+    font-size: clamp(4.2rem, min(10vw, 15.5svh), 5.2rem);
+  }
+
+  .intro {
+    margin: clamp(1.1rem, 2.2vh, 1.5rem) 0 0 0.45vw;
+    font-size: clamp(0.9rem, 1.7vw, 1rem);
+  }
+
+  .project-link {
+    margin: clamp(0.75rem, 1.4vh, 1rem) 0 0 0.45vw;
+    font-size: clamp(0.95rem, 1.8vw, 1.05rem);
+  }
+
+  .visual {
+    inset: 0;
+    height: auto;
+  }
+
+  .visual img {
+    left: calc(54vw - 72svh);
+    height: 92svh;
+  }
+
+  .monogram {
+    top: 21.5%;
+    left: 52%;
+    font-size: min(54vw, 70svh);
+  }
+
+  .orbit {
+    top: 13.5%;
+    left: 66%;
+    width: min(30vw, 45svh);
+  }
+
+  .disciplines {
+    bottom: 5.2vh;
+    left: 3.7vw;
+    color: var(--ink);
+    mix-blend-mode: normal;
+  }
+
+  .folio {
+    top: 20vh;
+    right: 3.55vw;
+    bottom: auto;
+    font-size: clamp(0.58rem, 1.2vw, 0.7rem);
   }
 }
 
