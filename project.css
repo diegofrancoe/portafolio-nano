@@ -71,7 +71,8 @@
 .project-page[data-project="agendavacialmallena"] .project-detail__hero h1 {
   max-width: 11ch;
   font-size: clamp(4rem, 8.5vw, 9.25rem);
-  white-space: nowrap;
+  white-space: normal;
+  overflow-wrap: normal;
 }
 
 .project-detail__hero h1 i {
