@@ -121,29 +121,27 @@ a {
 
 .hero-copy {
   position: absolute;
-  inset: 0;
+  top: 20.7%;
+  left: 3.25vw;
   z-index: 4;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
   width: 48vw;
   padding: 0;
   will-change: transform;
 }
 
 .eyebrow {
-  position: absolute;
-  top: 20.7%;
-  left: 3.5vw;
-  margin: 0;
+  margin: 0 0 0 0.25vw;
   font-size: clamp(0.72rem, 1.2vw, 1.22rem);
   letter-spacing: 0.44em;
   text-transform: uppercase;
 }
 
 h1 {
-  position: absolute;
-  top: 26.1%;
-  left: 3.25vw;
   max-width: 10ch;
-  margin: 0;
+  margin: clamp(1.5rem, 3vh, 2rem) 0 0;
   font-size: clamp(4.2rem, max(7.15vw, 12vh), 8.8rem);
   font-weight: 700;
   letter-spacing: -0.075em;
@@ -235,10 +233,7 @@ h1 {
 }
 
 .intro {
-  position: absolute;
-  top: 61%;
-  left: 3.7vw;
-  margin: 0;
+  margin: clamp(1.25rem, 2.4vh, 2rem) 0 0 0.45vw;
   color: #4b5356;
   font-size: clamp(1rem, 1.62vw, 1.78rem);
   font-weight: 400;
@@ -247,13 +242,10 @@ h1 {
 }
 
 .project-link {
-  position: absolute;
-  top: 69%;
-  left: 3.7vw;
   display: inline-flex;
   gap: 0.32rem;
   align-items: center;
-  margin: 0;
+  margin: clamp(0.8rem, 1.6vh, 1.25rem) 0 0 0.45vw;
   color: var(--accent);
   font-size: clamp(1rem, 1.65vw, 1.72rem);
   font-weight: 400;
@@ -1122,6 +1114,7 @@ h1 {
   h1 {
     position: static;
     max-width: 9ch;
+    margin-top: 0;
     font-size: clamp(3.7rem, 18vw, 6.3rem);
     line-height: 0.82;
   }
