@@ -1484,7 +1484,7 @@ h1 {
 @media (max-width: 390px) {
   .visual img {
     bottom: -24svh;
-    left: calc(38vw - 72svh);
+    left: calc(43vw - 72svh);
     height: 70svh;
   }
 
@@ -1495,7 +1495,7 @@ h1 {
   }
 
   .orbit {
-    top: 18%;
+    top: 26%;
     left: 28%;
     width: 42vw;
   }
