@@ -236,7 +236,7 @@ h1 {
 
 .intro {
   position: absolute;
-  top: 58%;
+  top: 61%;
   left: 3.7vw;
   margin: 0;
   color: #4b5356;
@@ -248,7 +248,7 @@ h1 {
 
 .project-link {
   position: absolute;
-  top: 66%;
+  top: 69%;
   left: 3.7vw;
   display: inline-flex;
   gap: 0.32rem;
