@@ -17,7 +17,7 @@ from reportlab.platypus import Paragraph
 ROOT = Path(__file__).resolve().parents[1]
 OUTPUT_DIR = ROOT / "output" / "pdf"
 DOCUMENT_DIR = ROOT / "assets" / "documents"
-PORTRAIT_PATH = ROOT / "assets" / "bernardo-transparent-real.png"
+PORTRAIT_PATH = ROOT / "assets" / "bernardo-cv-portrait-natural.png"
 UNITY_PATH = ROOT / "assets" / "brand-icons" / "unity-cube.png"
 
 PAGE_W, PAGE_H = A4
@@ -51,7 +51,7 @@ COPY = {
         "contact": "CONTACTO",
         "education": "FORMACIÓN",
         "degree": "Productor escénico y visual",
-        "school": "Universidad LCI",
+        "school": "LCI University",
         "focus": "ENFOQUE",
         "focus_body": "Producción técnica y visual / Contenido digital / Iluminación de atmósferas / Música, moda y cultura",
         "languages": "IDIOMAS",
@@ -253,10 +253,10 @@ def draw_education(c, copy) -> None:
     c.drawString(x + 15, y + height - 51, copy["school"])
 
     c.setStrokeColor(LINE)
-    c.line(x + 15, y + 105, x + width - 15, y + 105)
-    draw_label(c, copy["focus"], x + 15, y + 89, color=MUTED, size=5.6)
-    focus_style = paragraph_style("focus", size=6.4, leading=7.8, color=INK)
-    draw_paragraph(c, copy["focus_body"], x + 15, y + 77, width - 30, focus_style)
+    c.line(x + 15, y + 96, x + width - 15, y + 96)
+    draw_label(c, copy["focus"], x + 15, y + 82, color=MUTED, size=5.6)
+    focus_style = paragraph_style("focus", size=6.25, leading=7.4, color=INK)
+    draw_paragraph(c, copy["focus_body"], x + 15, y + 70, width - 30, focus_style)
 
     c.setStrokeColor(LINE)
     c.line(x + 15, y + 51, x + width - 15, y + 51)
@@ -284,7 +284,9 @@ def draw_projects(c, copy) -> None:
         c.setStrokeColor(LINE)
         c.setLineWidth(0.65)
         c.line(x, item_top, x + width, item_top)
-        draw_label(c, str(index), x, item_top - 15, size=6.2)
+        c.setFillColor(ACCENT)
+        c.setFont("Helvetica-Bold", 9.2)
+        c.drawString(x, item_top - 17, str(index))
         draw_paragraph(c, title, x + 29, item_top - 3, width - 34, title_style)
         draw_paragraph(c, body, x + 29, item_top - 24, width - 34, body_style)
 
