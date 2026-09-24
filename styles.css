@@ -1484,20 +1484,20 @@ h1 {
 @media (max-width: 390px) {
   .visual img {
     bottom: -24svh;
-    left: calc(50vw - 72svh);
+    left: calc(38vw - 72svh);
     height: 70svh;
   }
 
   .monogram {
-    top: 18%;
-    left: -4%;
-    font-size: 92vw;
+    top: 24%;
+    left: 8%;
+    font-size: 64vw;
   }
 
   .orbit {
-    top: 0;
-    left: 25%;
-    width: 72vw;
+    top: 18%;
+    left: 57%;
+    width: 42vw;
   }
 }
 
