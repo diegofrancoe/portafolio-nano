@@ -1,5 +1,5 @@
 const imageMedia = (src, es, en, position = "50% 50%", layout = "", caption = null) => ({ type: "image", src, position, layout, caption, alt: { es, en } });
-const videoMedia = (src, es, en, mime = "video/mp4", poster = "", caption = null) => ({ type: "video", src, mime, poster, caption, alt: { es, en } });
+const videoMedia = (src, es, en, mime = "video/mp4", poster = "", caption = null, playOverlay = false) => ({ type: "video", src, mime, poster, caption, playOverlay, alt: { es, en } });
 
 const projects = {
   ceniza: {
@@ -127,7 +127,7 @@ const projects = {
     media: [
       imageMedia("./assets/project-media/tu-plon-stereo/hero-neon-horizontal-hq.png", "Estudio de Tu Plon Stereo con letrero de neón, micrófonos y sillones", "Tu Plon Stereo studio with neon sign, microphones and chairs", "50% 50%"),
       imageMedia("./assets/project-media/tu-plon-stereo/behind-scenes-setup-hq.png", "Montaje audiovisual de Tu Plon Stereo antes de una grabación", "Tu Plon Stereo audiovisual setup before a recording", "50% 50%"),
-      videoMedia("./assets/project-media/tu-plon-stereo/behind-scenes-video.m4v", "Video detrás de cámaras de Tu Plon Stereo", "Behind-the-scenes Tu Plon Stereo video", "video/x-m4v"),
+      videoMedia("./assets/project-media/tu-plon-stereo/behind-scenes-video.m4v", "Video detrás de cámaras de Tu Plon Stereo", "Behind-the-scenes Tu Plon Stereo video", "video/x-m4v", "", null, true),
     ],
     es: {
       category: "Contenido digital",
@@ -253,6 +253,38 @@ const createMediaElement = (item, language, { cover = false } = {}) => {
   return image;
 };
 
+const addVideoPlayOverlay = (container, video, language) => {
+  container.classList.add("has-video-overlay");
+
+  const button = document.createElement("button");
+  button.className = "video-play-overlay";
+  button.type = "button";
+  button.setAttribute("aria-label", language === "es" ? "Reproducir video" : "Play video");
+
+  const icon = document.createElement("span");
+  icon.className = "video-play-overlay__icon";
+  icon.setAttribute("aria-hidden", "true");
+
+  const label = document.createElement("span");
+  label.className = "video-play-overlay__label";
+  label.textContent = language === "es" ? "VER VIDEO" : "PLAY VIDEO";
+
+  button.append(icon, label);
+  container.append(button);
+
+  const setPlaying = (isPlaying) => {
+    container.classList.toggle("is-playing", isPlaying);
+    button.hidden = isPlaying;
+  };
+
+  button.addEventListener("click", () => {
+    video.play().catch(() => setPlaying(false));
+  });
+  video.addEventListener("play", () => setPlaying(true));
+  video.addEventListener("pause", () => setPlaying(false));
+  video.addEventListener("ended", () => setPlaying(false));
+};
+
 const renderMedia = (language) => {
   const visual = document.querySelector(".project-detail__visual");
   const mediaHost = document.querySelector("[data-project-media]");
@@ -289,7 +321,9 @@ const renderMedia = (language) => {
     galleryList.replaceChildren(...galleryItems.map((item) => {
       const figure = document.createElement("figure");
       figure.className = `project-gallery__item project-gallery__item--${item.type}${item.layout ? ` project-gallery__item--${item.layout}` : ""}`;
-      figure.append(createMediaElement(item, language));
+      const media = createMediaElement(item, language);
+      figure.append(media);
+      if (item.type === "video" && item.playOverlay) addVideoPlayOverlay(figure, media, language);
       return figure;
     }));
   }
