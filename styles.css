@@ -1424,7 +1424,7 @@ h1 {
   }
 
   .monogram {
-    top: 6%;
+    top: 14%;
     left: 8%;
     font-size: 68vw;
   }
@@ -1478,6 +1478,28 @@ h1 {
   .contact-details {
     margin-right: 0;
     margin-left: 0;
+  }
+}
+
+@media (max-width: 390px) {
+  .monogram {
+    left: 6%;
+    font-size: 66vw;
+  }
+
+  .orbit {
+    left: 35%;
+    width: 50vw;
+  }
+}
+
+@media (max-width: 340px) {
+  .visual img {
+    left: -63vw;
+  }
+
+  .orbit {
+    left: 48%;
   }
 }
 
