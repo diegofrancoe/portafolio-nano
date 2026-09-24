@@ -760,10 +760,20 @@ h1 {
   filter: invert(1);
 }
 
-.tool-icon--resolve img {
-  width: auto;
-  height: 3.4rem;
-  border-radius: 24%;
+.tool-icon--resolve svg {
+  width: 100%;
+  height: 100%;
+}
+
+.tool-icon--resolve svg circle {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 2;
+}
+
+.tool-icon--resolve svg circle:last-child {
+  fill: currentColor;
+  stroke: none;
 }
 
 .tool-icon--adobe {
