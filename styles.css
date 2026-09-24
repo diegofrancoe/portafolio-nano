@@ -1482,24 +1482,22 @@ h1 {
 }
 
 @media (max-width: 390px) {
-  .monogram {
-    left: 6%;
-    font-size: 66vw;
-  }
-
-  .orbit {
-    left: 35%;
-    width: 50vw;
-  }
-}
-
-@media (max-width: 340px) {
   .visual img {
-    left: -63vw;
+    bottom: -24svh;
+    left: calc(50vw - 72svh);
+    height: 70svh;
+  }
+
+  .monogram {
+    top: 18%;
+    left: -4%;
+    font-size: 92vw;
   }
 
   .orbit {
-    left: 48%;
+    top: 0;
+    left: 25%;
+    width: 72vw;
   }
 }
 
