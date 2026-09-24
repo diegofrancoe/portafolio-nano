@@ -68,6 +68,12 @@
   line-height: 0.82;
 }
 
+.project-page[data-project="agendavacialmallena"] .project-detail__hero h1 {
+  max-width: 11ch;
+  font-size: clamp(4rem, 8.5vw, 9.25rem);
+  white-space: nowrap;
+}
+
 .project-detail__hero h1 i {
   display: inline-block;
   width: 0.15em;
@@ -116,6 +122,61 @@
   height: 100%;
   object-fit: contain;
   background: #090909;
+}
+
+.project-detail__visual--media-grid {
+  height: auto;
+  overflow: visible;
+  background: var(--paper);
+}
+
+.project-detail__media-host--grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: clamp(1rem, 2vw, 2.25rem);
+  width: min(100%, 76rem);
+  height: auto;
+  margin: 0 auto;
+  padding: clamp(1.35rem, 3.7vw, 4rem);
+}
+
+.project-media-grid__item {
+  position: relative;
+  aspect-ratio: 4 / 5;
+  margin: 0;
+  overflow: visible;
+  background: #090909;
+}
+
+.project-media-grid__item > img,
+.project-media-grid__item > video {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project-media-grid__item > video {
+  object-fit: contain;
+}
+
+.project-media-grid__caption {
+  position: absolute;
+  top: 50%;
+  left: -1.45rem;
+  color: #52595c;
+  font: 0.66rem/1 "Courier New", monospace;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  writing-mode: vertical-rl;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.project-media-grid__item:nth-child(even) .project-media-grid__caption {
+  right: -1.45rem;
+  left: auto;
+  transform: translateY(-50%);
 }
 
 .project-detail__visual.is-placeholder img {
@@ -176,6 +237,13 @@
   width: 100%;
   height: auto;
   aspect-ratio: 16 / 9;
+}
+
+.project-gallery__item.project-gallery__item--compact-short:last-child {
+  grid-column: 1 / -1;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 21 / 9;
 }
 
 .project-gallery__item > img,
@@ -281,6 +349,11 @@
   transition: transform 400ms cubic-bezier(0.22, 1, 0.36, 1);
 }
 
+.project-page[data-project="agendavacialmallena"] .project-detail__website {
+  margin-top: clamp(4.5rem, 6vw, 6rem);
+  font-size: 0.78rem;
+}
+
 .project-next {
   padding: clamp(4rem, 8vw, 8rem) 3.7vw;
   background: var(--paper);
@@ -297,6 +370,11 @@
   font-weight: 600;
   letter-spacing: -0.065em;
   line-height: 0.9;
+}
+
+.project-next a span {
+  min-width: 0;
+  overflow-wrap: break-word;
 }
 
 .project-next a i {
@@ -367,12 +445,45 @@
     font-size: clamp(3.7rem, 18vw, 6.8rem);
   }
 
+  .project-page[data-project="agendavacialmallena"] .project-detail__hero h1 {
+    max-width: 10ch;
+    font-size: clamp(2.75rem, 13.6vw, 5.4rem);
+    white-space: normal;
+    overflow-wrap: normal;
+  }
+
   .project-detail__hero > p {
     max-width: 24rem;
   }
 
   .project-detail__visual {
     height: 105vw;
+  }
+
+  .project-detail__visual--media-grid {
+    height: auto;
+  }
+
+  .project-detail__media-host--grid {
+    grid-template-columns: 1fr;
+    padding: 1.35rem;
+  }
+
+  .project-media-grid__caption,
+  .project-media-grid__item:nth-child(even) .project-media-grid__caption {
+    top: 1rem;
+    right: auto;
+    left: 1rem;
+    z-index: 2;
+    padding: 0.38rem 0.48rem;
+    color: white;
+    background: rgba(9, 9, 9, 0.68);
+    writing-mode: horizontal-tb;
+    transform: none;
+  }
+
+  .project-page[data-project="agendavacialmallena"] .project-media-grid__caption {
+    display: none;
   }
 
   .project-detail__gallery {
@@ -395,6 +506,12 @@
     width: 100%;
     height: auto;
     aspect-ratio: 16 / 9;
+  }
+
+  .project-gallery__item.project-gallery__item--compact-short:last-child {
+    width: 100%;
+    height: auto;
+    aspect-ratio: 21 / 9;
   }
 
   .project-detail__placeholder {
@@ -424,7 +541,24 @@
   }
 
   .project-footer {
+    gap: 1rem;
     padding: 1.25rem 1.35rem;
+  }
+}
+
+@media (max-width: 520px) {
+  .project-detail__hero {
+    min-height: 64svh;
+  }
+
+  .project-next a {
+    align-items: flex-end;
+    font-size: clamp(2.25rem, 11vw, 3.6rem);
+  }
+
+  .project-footer {
+    font-size: 0.62rem;
+    letter-spacing: 0.1em;
   }
 }
 

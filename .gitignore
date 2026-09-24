@@ -5,3 +5,13 @@ node_modules/
 dist/
 build/
 *.log
+output/
+tmp/
+assets/bernardo-cv-headshot.png
+assets/bernardo-cv-portrait-side*.png
+assets/project-media/agendavacialmallena/portrait-doorway-hq.jpg
+assets/project-media/tu-plon-stereo/hero-conversation-clean-hq.png
+assets/project-media/tu-plon-stereo/hero-conversation-hq.png
+assets/project-media/tu-plon-stereo/mural-lounge-hq.png
+assets/project-media/tu-plon-stereo/portrait-host-hq.png
+assets/project-media/tu-plon-stereo/studio-neon-hq.png

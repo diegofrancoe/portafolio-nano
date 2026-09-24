@@ -1,15 +1,15 @@
-const imageMedia = (src, es, en, position = "50% 50%", layout = "") => ({ type: "image", src, position, layout, alt: { es, en } });
-const videoMedia = (src, es, en, mime = "video/mp4") => ({ type: "video", src, mime, alt: { es, en } });
+const imageMedia = (src, es, en, position = "50% 50%", layout = "", caption = null) => ({ type: "image", src, position, layout, caption, alt: { es, en } });
+const videoMedia = (src, es, en, mime = "video/mp4", poster = "", caption = null) => ({ type: "video", src, mime, poster, caption, alt: { es, en } });
 
 const projects = {
   ceniza: {
-    number: "01", title: "Ceniza", monogram: "C",
+    number: "1", title: "Ceniza", monogram: "C",
     website: "https://www.cenizaproducciones.com/",
     media: [
       imageMedia("./assets/project-media/ceniza/cover-portrait-hq.png", "Retrato de estudio con iluminación cálida para una producción de Ceniza", "Warm studio portrait for a Ceniza production", "50% 12%"),
       imageMedia("./assets/project-media/ceniza/04.jpg", "Retrato iluminado en azul durante una producción de Ceniza", "Blue-lit portrait during a Ceniza production"),
       imageMedia("./assets/project-media/ceniza/01.jpg", "Preparación del set para una producción de Ceniza", "Set preparation for a Ceniza production"),
-      imageMedia("./assets/project-media/ceniza/gallery-atmosferas-minimal-hq.png", "Luz, diseño, experiencia y atmósferas", "Light, design, experience and atmospheres", "0% 50%", "compact"),
+      imageMedia("./assets/project-media/ceniza/landing-cover-smoke-clean.jpg", "Tubo de luz turquesa entre humo sobre una superficie reflectante", "Turquoise tube light surrounded by smoke on a reflective surface", "50% 62%", "compact-short"),
     ],
     es: {
       category: "Producción audiovisual",
@@ -29,7 +29,7 @@ const projects = {
     },
   },
   "super-rayo": {
-    number: "02", title: "Super Rayo", monogram: "SR",
+    number: "2", title: "Super Rayo", monogram: "SR",
     media: [
       imageMedia("./assets/project-media/super-rayo/hero-bateria-centrada-hq.png", "Batería de Super Rayo centrada entre luces rojas y azules", "Super Rayo drum kit centered between red and blue lights"),
       imageMedia("./assets/project-media/super-rayo/02.jpg", "Montaje de una banda de jazz en Super Rayo", "Jazz band setup at Super Rayo"),
@@ -51,7 +51,7 @@ const projects = {
     },
   },
   culebras: {
-    number: "03", title: "Todas las culebras son serpientes", monogram: "TC",
+    number: "5", title: "Todas las culebras son serpientes", monogram: "TC",
     media: [
       imageMedia("./assets/project-media/culebras/hero-neon-hq.png", "Letrero de neón de Todas las culebras son serpientes entre vegetación", "Todas las culebras son serpientes neon sign among tropical plants"),
       imageMedia("./assets/project-media/culebras/gallery-vegetacion-hq.png", "Vegetación iluminada alrededor de las escaleras de la instalación", "Illuminated plants surrounding the installation staircase"),
@@ -73,12 +73,12 @@ const projects = {
     },
   },
   "amigos-vinilos": {
-    number: "04", title: "Amigos y Vinilos", monogram: "AV",
+    number: "6", title: "Amigos y Vinilos", monogram: "AV",
     media: [
-      imageMedia("./assets/project-media/amigos-vinilos/01.jpg", "Conversación en el set de Amigos y Vinilos", "Conversation on the Amigos y Vinilos set"),
-      imageMedia("./assets/project-media/amigos-vinilos/02.jpg", "Retrato editorial de Amigos y Vinilos", "Editorial portrait for Amigos y Vinilos"),
-      imageMedia("./assets/project-media/amigos-vinilos/03.jpg", "Dirección artística del formato Amigos y Vinilos", "Art direction for Amigos y Vinilos"),
-      imageMedia("./assets/project-media/amigos-vinilos/04.jpg", "Detalle del montaje para Amigos y Vinilos", "Setup detail for Amigos y Vinilos"),
+      imageMedia("./assets/project-media/amigos-vinilos/hero-set-hq.jpg", "Set preparado para una sesión de Amigos y Vinilos", "Set prepared for an Amigos y Vinilos session"),
+      imageMedia("./assets/project-media/amigos-vinilos/gallery-overhead-hq.jpg", "Vista superior de la sesión musical de Amigos y Vinilos", "Overhead view of the Amigos y Vinilos music session"),
+      imageMedia("./assets/project-media/amigos-vinilos/gallery-purple-session-hq.jpg", "Sesión musical con iluminación violeta en el estudio", "Music session under violet studio lighting"),
+      imageMedia("./assets/project-media/amigos-vinilos/gallery-technical-setup-hq.jpg", "Montaje técnico para Amigos y Vinilos", "Technical setup for Amigos y Vinilos", "50% 50%", "compact"),
     ],
     es: {
       category: "Formato editorial",
@@ -96,10 +96,14 @@ const projects = {
     },
   },
   agendavacialmallena: {
-    number: "05", title: "Agendavaciaalmallena", monogram: "A",
+    number: "3", title: "Agendavacia\u200balmallena", monogram: "A",
+    website: "https://www.instagram.com/agendavaciaalmallena",
+    mediaLayout: "alternating-grid",
     media: [
-      videoMedia("./assets/project-media/agendavacialmallena/01.m4v", "Video de emprendimientos para Agendavaciaalmallena", "Entrepreneurship video for Agendavaciaalmallena", "video/x-m4v"),
-      videoMedia("./assets/project-media/agendavacialmallena/02.m4v", "Reel de reflexión para Agendavaciaalmallena", "Reflection reel for Agendavaciaalmallena", "video/x-m4v"),
+      videoMedia("./assets/project-media/agendavacialmallena/video-emprendimientos-hq.m4v", "Video de emprendimientos para Agendavaciaalmallena", "Entrepreneurship video for Agendavaciaalmallena", "video/x-m4v", "", { es: "1 / VIDEO · COMUNIDAD", en: "1 / VIDEO · COMMUNITY" }),
+      imageMedia("./assets/project-media/agendavacialmallena/portrait-turquoise-hq.jpg", "Retrato durante una conversación sobre emprendimiento", "Portrait during a conversation about entrepreneurship", "50% 50%", "", { es: "2 / RETRATO · EXPERIENCIA", en: "2 / PORTRAIT · EXPERIENCE" }),
+      imageMedia("./assets/project-media/agendavacialmallena/portrait-reflection-hq.jpg", "Retrato durante una reflexión sobre nuevos proyectos", "Portrait during a reflection on new projects", "50% 50%", "", { es: "3 / REFLEXIÓN · PROPÓSITO", en: "3 / REFLECTION · PURPOSE" }),
+      videoMedia("./assets/project-media/agendavacialmallena/reel-reflexion-hq.m4v", "Reel de reflexión para Agendavaciaalmallena", "Reflection reel for Agendavaciaalmallena", "video/x-m4v", "", { es: "4 / VIDEO · LLENAR EL ALMA", en: "4 / VIDEO · FILL THE SOUL" }),
     ],
     es: {
       category: "Contenido digital",
@@ -107,6 +111,7 @@ const projects = {
       role: "Producción · Edición",
       description: "Una propuesta digital dirigida a personas retiradas que buscan nuevos proyectos, bienestar y maneras de disfrutar su tiempo.",
       scope: ["Producción", "Edición", "Dirección", "Grabación"],
+      websiteLabel: "Ver el proyecto en Instagram",
     },
     en: {
       category: "Digital content",
@@ -114,14 +119,15 @@ const projects = {
       role: "Production · Editing",
       description: "A digital project for retired people looking for new projects, well-being and meaningful ways to enjoy their time.",
       scope: ["Production", "Editing", "Direction", "Recording"],
+      websiteLabel: "See the project on Instagram",
     },
   },
   "tu-plon-stereo": {
-    number: "06", title: "Tu Plon Stereo", monogram: "TP",
+    number: "7", title: "Tu Plon Stereo", monogram: "TP",
     media: [
-      imageMedia("./assets/project-media/tu-plon-stereo/01.jpg", "Entrevista en el set de Tu Plon Stereo", "Interview on the Tu Plon Stereo set"),
-      imageMedia("./assets/project-media/tu-plon-stereo/02.jpg", "Producción audiovisual de Tu Plon Stereo", "Tu Plon Stereo audiovisual production"),
-      imageMedia("./assets/project-media/tu-plon-stereo/03.jpg", "Detalle del set de Tu Plon Stereo", "Tu Plon Stereo set detail"),
+      imageMedia("./assets/project-media/tu-plon-stereo/hero-neon-horizontal-hq.png", "Estudio de Tu Plon Stereo con letrero de neón, micrófonos y sillones", "Tu Plon Stereo studio with neon sign, microphones and chairs", "50% 50%"),
+      imageMedia("./assets/project-media/tu-plon-stereo/behind-scenes-setup-hq.png", "Montaje audiovisual de Tu Plon Stereo antes de una grabación", "Tu Plon Stereo audiovisual setup before a recording", "50% 50%"),
+      videoMedia("./assets/project-media/tu-plon-stereo/behind-scenes-video.m4v", "Video detrás de cámaras de Tu Plon Stereo", "Behind-the-scenes Tu Plon Stereo video", "video/x-m4v"),
     ],
     es: {
       category: "Contenido digital",
@@ -139,12 +145,11 @@ const projects = {
     },
   },
   "podcast-introcrea": {
-    number: "07", title: "Podcast Introcrea", monogram: "PI",
+    number: "4", title: "Podcast Introcrea", monogram: "PI",
     media: [
       imageMedia("./assets/project-media/podcast-introcrea/landing-cover-hq.png", "Set de Podcast Introcrea con dos participantes e iluminación rosa y verde", "Podcast Introcrea set with two participants and pink and green lighting", "50% 50%"),
       imageMedia("./assets/project-media/podcast-introcrea/02.jpg", "Cámara y participantes durante la grabación de Podcast Introcrea", "Camera and participants during the Podcast Introcrea recording", "50% 55%"),
       imageMedia("./assets/project-media/podcast-introcrea/03.jpg", "Montaje de cámara e iluminación para Podcast Introcrea", "Camera and lighting setup for Podcast Introcrea", "50% 52%"),
-      imageMedia("./assets/project-media/podcast-introcrea/04.jpg", "Producción audiovisual de Podcast Introcrea en estudio", "Podcast Introcrea audiovisual production in the studio", "50% 52%"),
     ],
     es: {
       category: "Podcast · Producción audiovisual",
@@ -163,10 +168,19 @@ const projects = {
   },
 };
 
-const projectOrder = Object.keys(projects);
+const projectOrder = [
+  "ceniza",
+  "super-rayo",
+  "agendavacialmallena",
+  "podcast-introcrea",
+  "culebras",
+  "amigos-vinilos",
+  "tu-plon-stereo",
+];
 const requestedProject = new URLSearchParams(window.location.search).get("project");
 const projectKey = projects[requestedProject] ? requestedProject : projectOrder[0];
 const project = projects[projectKey];
+document.body.dataset.project = projectKey;
 const languageStorageKey = "bernardo-portfolio-language";
 let projectMotion = null;
 
@@ -196,7 +210,7 @@ const syncLanguageNavigation = (language, nextKey) => {
   const backLink = document.querySelector(".project-back");
   const contactLink = document.querySelector(".project-footer a");
   if (brandLink) brandLink.href = `${homeUrl}#inicio`;
-  if (backLink) backLink.href = `${homeUrl}#proyectos`;
+  if (backLink) backLink.href = `${homeUrl}#experiencia`;
   if (contactLink) contactLink.href = `${homeUrl}#contacto`;
 
   const nextLink = document.querySelector("[data-next-link]");
@@ -213,8 +227,9 @@ const createMediaElement = (item, language, { cover = false } = {}) => {
   if (item.type === "video") {
     const video = document.createElement("video");
     video.playsInline = true;
-    video.preload = "metadata";
+    video.preload = cover ? "auto" : "metadata";
     video.setAttribute("aria-label", item.alt[language]);
+    if (item.poster) video.poster = item.poster;
     if (cover) {
       video.autoplay = true;
       video.muted = true;
@@ -239,10 +254,34 @@ const createMediaElement = (item, language, { cover = false } = {}) => {
 };
 
 const renderMedia = (language) => {
-  const [cover, ...galleryItems] = project.media;
+  const visual = document.querySelector(".project-detail__visual");
   const mediaHost = document.querySelector("[data-project-media]");
   const gallery = document.querySelector("[data-project-gallery]");
   const galleryList = document.querySelector("[data-project-gallery-list]");
+
+  const usesAlternatingGrid = project.mediaLayout === "alternating-grid";
+  visual?.classList.toggle("project-detail__visual--media-grid", usesAlternatingGrid);
+  mediaHost?.classList.toggle("project-detail__media-host--grid", usesAlternatingGrid);
+
+  if (usesAlternatingGrid) {
+    mediaHost?.replaceChildren(...project.media.map((item) => {
+      const figure = document.createElement("figure");
+      figure.className = `project-media-grid__item project-media-grid__item--${item.type}`;
+      figure.append(createMediaElement(item, language));
+      if (item.caption) {
+        const caption = document.createElement("figcaption");
+        caption.className = "project-media-grid__caption";
+        caption.textContent = item.caption[language];
+        figure.append(caption);
+      }
+      return figure;
+    }));
+    if (gallery) gallery.hidden = true;
+    galleryList?.replaceChildren();
+    return;
+  }
+
+  const [cover, ...galleryItems] = project.media;
   mediaHost?.replaceChildren(createMediaElement(cover, language, { cover: true }));
 
   if (gallery && galleryList) {
@@ -265,16 +304,21 @@ const setupProjectMotion = () => {
   projectMotion.add("(prefers-reduced-motion: no-preference)", () => {
     const ease = "power3.out";
     const heroMedia = document.querySelector("[data-project-media] > *");
+    const mediaGridItems = gsap.utils.toArray(".project-media-grid__item");
     const galleryItems = gsap.utils.toArray(".project-gallery__item");
 
-    gsap.timeline({ defaults: { ease } })
+    const intro = gsap.timeline({ defaults: { ease } })
       .fromTo(".project-detail__eyebrow", { autoAlpha: 0, y: 18 }, { autoAlpha: 1, y: 0, duration: 0.65 })
       .fromTo(".project-detail__hero h1", { autoAlpha: 0, y: 48 }, { autoAlpha: 1, y: 0, duration: 0.95 }, 0.12)
       .fromTo(".project-detail__hero > p", { autoAlpha: 0, y: 30 }, { autoAlpha: 1, y: 0, duration: 0.8 }, 0.32)
-      .fromTo(".project-detail__visual", { clipPath: "inset(0 0 100% 0)" }, { clipPath: "inset(0 0 0% 0)", duration: 1.15 }, 0.22)
-      .fromTo(heroMedia, { scale: 1.08 }, { scale: 1.02, duration: 1.35 }, 0.22);
+      .fromTo(".project-detail__visual", { clipPath: "inset(0 0 100% 0)" }, { clipPath: "inset(0 0 0% 0)", duration: 1.15 }, 0.22);
 
-    gsap.fromTo(heroMedia, { yPercent: -1.5 }, { yPercent: 2.5, ease: "none", scrollTrigger: { trigger: ".project-detail__visual", start: "top bottom", end: "bottom top", scrub: 1.35 } });
+    if (mediaGridItems.length) {
+      intro.fromTo(mediaGridItems, { autoAlpha: 0, y: 34 }, { autoAlpha: 1, y: 0, duration: 0.9, stagger: 0.08 }, 0.35);
+    } else if (heroMedia) {
+      intro.fromTo(heroMedia, { scale: 1.08 }, { scale: 1.02, duration: 1.35 }, 0.22);
+      gsap.fromTo(heroMedia, { yPercent: -1.5 }, { yPercent: 2.5, ease: "none", scrollTrigger: { trigger: ".project-detail__visual", start: "top bottom", end: "bottom top", scrub: 1.35 } });
+    }
 
     galleryItems.forEach((item, index) => {
       const media = item.querySelector("img, video");
@@ -307,6 +351,16 @@ const renderProject = (language) => {
   document.documentElement.lang = language;
   document.title = `${title} — Bernardo Franco`;
   document.querySelector('meta[name="description"]')?.setAttribute("content", localized.lead);
+  document.querySelector('meta[property="og:title"]')?.setAttribute("content", `${title} — Bernardo Franco`);
+  document.querySelector('meta[property="og:description"]')?.setAttribute("content", localized.lead);
+  const canonicalUrl = `https://www.bernardofrancoe.com/project.html?project=${projectKey}&lang=${language}`;
+  document.querySelector('meta[property="og:url"]')?.setAttribute("content", canonicalUrl);
+  document.querySelector('link[rel="canonical"]')?.setAttribute("href", canonicalUrl);
+  const socialImage = project.media.find((item) => item.type === "image");
+  if (socialImage) {
+    const socialImageUrl = new URL(socialImage.src.replace(/^\.\//, "/"), "https://www.bernardofrancoe.com").href;
+    document.querySelector('meta[property="og:image"]')?.setAttribute("content", socialImageUrl);
+  }
   document.querySelectorAll("[data-copy]").forEach((element) => { element.textContent = copy[element.dataset.copy]; });
   document.querySelector(".project-detail__info")?.setAttribute("aria-label", copy.infoLabel);
   document.querySelector(".project-detail__gallery")?.setAttribute("aria-label", copy.galleryLabel);

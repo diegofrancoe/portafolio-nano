@@ -1299,6 +1299,7 @@ h1 {
 
   .contact-section {
     min-height: 45rem;
+    padding-bottom: 7rem;
   }
 
   .contact-section .section-kicker,
@@ -1325,6 +1326,48 @@ h1 {
 
   .contact-details a:nth-child(2) {
     border-top: 0;
+  }
+}
+
+@media (max-width: 520px) {
+  .projects-heading h2,
+  .profile-intro h2,
+  .experience-heading h2 {
+    font-size: clamp(3.35rem, 16.2vw, 5.25rem);
+  }
+
+  .capabilities {
+    grid-template-columns: 1fr;
+  }
+
+  .capabilities article,
+  .capabilities article + article {
+    min-height: 0;
+    padding: 1.4rem 0 2rem;
+    border-right: 0;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.18);
+  }
+
+  .capabilities h3 {
+    margin: 1.75rem 0 0.75rem;
+  }
+
+  .tool-stack__header {
+    display: block;
+  }
+
+  .tool-stack__header .section-kicker {
+    margin-bottom: 1rem;
+  }
+
+  .tool-stack__header > p:last-child {
+    text-align: left;
+  }
+
+  .contact-cta,
+  .contact-details {
+    margin-right: 0;
+    margin-left: 0;
   }
 }
 

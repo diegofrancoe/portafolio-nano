@@ -26,30 +26,30 @@ const translations = {
       "Producción, iluminación y construcción de atmósferas para música, cultura y contenido audiovisual.",
     "projects.cenizaAlt":
       "Retrato de una mujer bajo iluminación roja para una producción de Ceniza",
-    "projects.cenizaCategory": "01 · Producción audiovisual",
+    "projects.cenizaCategory": "1 · Producción audiovisual",
     "projects.cenizaRole": "Cofundador · Producción técnica e iluminación",
     "projects.cenizaLinkLabel": "Ver proyecto Ceniza",
     "projects.superRayoAlt":
       "Cabina de Super Rayo durante un evento con iluminación roja y azul",
-    "projects.superRayoCategory": "02 · Música y cultura",
+    "projects.superRayoCategory": "2 · Música y cultura",
     "projects.superRayoRole": "Jefe de cabina · Producción técnica",
     "projects.superRayoLinkLabel": "Ver proyecto Super Rayo",
     "projects.agendaAlt": "Protagonista de Agendavaciaalmallena en un parque de Bogotá",
-    "projects.agendaCategory": "03 · Contenido digital",
+    "projects.agendaCategory": "3 · Contenido digital",
     "projects.agendaRole": "Producción · Edición",
     "projects.agendaLinkLabel": "Ver proyecto Agendavaciaalmallena",
     "projects.culebrasAlt":
       "Instalación escénica con vegetación, neón y luces de color",
-    "projects.culebrasCategory": "03 · Instalación escénica",
+    "projects.culebrasCategory": "5 · Instalación escénica",
     "projects.culebrasRole": "Asistencia de arte · Producción y montaje",
     "projects.culebrasLinkLabel": "Ver proyecto Todas las culebras son serpientes",
     "projects.amigosAlt": "Producción detrás de cámaras de Amigos y Vinilos en estudio",
-    "projects.amigosCategory": "04 · Formato editorial",
+    "projects.amigosCategory": "6 · Formato editorial",
     "projects.amigosRole": "Producción · Dirección artística y montaje",
     "projects.amigosLinkLabel": "Ver proyecto Amigos y Vinilos",
     "projects.introcreaAlt":
       "Set de Podcast Introcrea con dos participantes e iluminación rosa y verde",
-    "projects.introcreaCategory": "03 · Podcast · Producción audiovisual",
+    "projects.introcreaCategory": "4 · Podcast · Producción audiovisual",
     "projects.introcreaRole": "Producción técnica · Iluminación · Montaje",
     "projects.introcreaLinkLabel": "Ver proyecto Podcast Introcrea",
     "profile.kicker": "Acerca de mí",
@@ -67,7 +67,7 @@ const translations = {
       "Lectura conceptual, referencias, composición espacial y coherencia estética.",
     "profile.postTitle": "Postproducción",
     "profile.postBody":
-      "Edición, montaje, tratamiento de color y acabado visual para dar ritmo y coherencia a cada pieza.",
+      "Edición, tratamiento de color y acabado visual para dar ritmo y coherencia a cada pieza.",
     "profile.toolsKicker": "Herramientas",
     "profile.toolsTitle": "Flujo técnico y creativo",
     "experience.kicker": "Experiencia",
@@ -78,6 +78,8 @@ const translations = {
     "experience.superRayoRole": "Jefe de cabina · Productor técnico",
     "experience.culebrasCategory": "Dirección de arte · Montaje",
     "experience.culebrasRole": "Asistente de producción y arte",
+    "experience.amigosCategory": "Formato editorial · Música y conversación",
+    "experience.amigosRole": "Producción · Dirección artística y montaje",
     "experience.agendaCategory": "Contenido digital · Edición",
     "experience.agendaRole": "Producción · Edición",
     "experience.agendaLinkLabel": "Ver proyecto Agendavaciaalmallena",
@@ -127,30 +129,30 @@ const translations = {
       "Production, lighting and atmosphere building for music, culture and audiovisual content.",
     "projects.cenizaAlt":
       "Portrait of a woman under red lighting for a Ceniza production",
-    "projects.cenizaCategory": "01 · Audiovisual production",
+    "projects.cenizaCategory": "1 · Audiovisual production",
     "projects.cenizaRole": "Co-founder · Technical production and lighting",
     "projects.cenizaLinkLabel": "View Ceniza project",
     "projects.superRayoAlt":
       "Super Rayo booth during an event with red and blue lighting",
-    "projects.superRayoCategory": "02 · Music and culture",
+    "projects.superRayoCategory": "2 · Music and culture",
     "projects.superRayoRole": "Booth manager · Technical production",
     "projects.superRayoLinkLabel": "View Super Rayo project",
     "projects.agendaAlt": "Agendavaciaalmallena presenter in a Bogotá park",
-    "projects.agendaCategory": "03 · Digital content",
+    "projects.agendaCategory": "3 · Digital content",
     "projects.agendaRole": "Production · Editing",
     "projects.agendaLinkLabel": "View Agendavaciaalmallena project",
     "projects.culebrasAlt":
       "Stage installation with plants, neon and colored lighting",
-    "projects.culebrasCategory": "03 · Stage installation",
+    "projects.culebrasCategory": "5 · Stage installation",
     "projects.culebrasRole": "Art assistance · Production and setup",
     "projects.culebrasLinkLabel": "View Todas las culebras son serpientes project",
     "projects.amigosAlt": "Behind-the-scenes studio production for Amigos y Vinilos",
-    "projects.amigosCategory": "04 · Editorial format",
+    "projects.amigosCategory": "6 · Editorial format",
     "projects.amigosRole": "Production · Art direction and setup",
     "projects.amigosLinkLabel": "View Amigos y Vinilos project",
     "projects.introcreaAlt":
       "Podcast Introcrea set with two participants and pink and green lighting",
-    "projects.introcreaCategory": "03 · Podcast · Audiovisual production",
+    "projects.introcreaCategory": "4 · Podcast · Audiovisual production",
     "projects.introcreaRole": "Technical production · Lighting · Setup",
     "projects.introcreaLinkLabel": "View Podcast Introcrea project",
     "profile.kicker": "About me",
@@ -168,7 +170,7 @@ const translations = {
       "Conceptual interpretation, references, spatial composition and aesthetic consistency.",
     "profile.postTitle": "Post-production",
     "profile.postBody":
-      "Editing, sequencing, color treatment and visual finishing to give each piece rhythm and coherence.",
+      "Editing, color treatment and visual finishing to give each piece rhythm and coherence.",
     "profile.toolsKicker": "Tools",
     "profile.toolsTitle": "Technical and creative workflow",
     "experience.kicker": "Experience",
@@ -179,6 +181,8 @@ const translations = {
     "experience.superRayoRole": "Booth manager · Technical producer",
     "experience.culebrasCategory": "Art direction · Setup",
     "experience.culebrasRole": "Production and art assistant",
+    "experience.amigosCategory": "Editorial format · Music and conversation",
+    "experience.amigosRole": "Production · Art direction and setup",
     "experience.agendaCategory": "Digital content · Editing",
     "experience.agendaRole": "Production · Editing",
     "experience.agendaLinkLabel": "View Agendavaciaalmallena project",
@@ -205,6 +209,8 @@ const translations = {
 
 const languageButtons = [...document.querySelectorAll("[data-language]")];
 const metaDescription = document.querySelector('meta[name="description"]');
+const openGraphTitle = document.querySelector('meta[property="og:title"]');
+const openGraphDescription = document.querySelector('meta[property="og:description"]');
 const languageStorageKey = "bernardo-portfolio-language";
 let currentLanguage = "es";
 
@@ -249,6 +255,8 @@ const setLanguage = (language, { persist = true } = {}) => {
   document.documentElement.lang = language;
   document.title = copy.metaTitle;
   metaDescription?.setAttribute("content", copy.metaDescription);
+  openGraphTitle?.setAttribute("content", copy.metaTitle);
+  openGraphDescription?.setAttribute("content", copy.metaDescription);
 
   document.querySelectorAll("[data-i18n]").forEach((element) => {
     const value = copy[element.dataset.i18n];
@@ -718,7 +726,28 @@ if (window.gsap && window.ScrollTrigger) {
     );
   });
 
-  const refreshMotion = () => ScrollTrigger.refresh();
+  const alignInitialHash = () => {
+    if (!window.location.hash) return;
+
+    let target = null;
+    try {
+      target = document.querySelector(window.location.hash);
+    } catch {
+      return;
+    }
+
+    requestAnimationFrame(() => {
+      const previousScrollBehavior = document.documentElement.style.scrollBehavior;
+      document.documentElement.style.scrollBehavior = "auto";
+      target?.scrollIntoView({ block: "start", behavior: "auto" });
+      document.documentElement.style.scrollBehavior = previousScrollBehavior;
+    });
+  };
+
+  const refreshMotion = () => {
+    ScrollTrigger.refresh();
+    alignInitialHash();
+  };
   window.addEventListener("load", refreshMotion, { once: true });
   document.fonts?.ready.then(refreshMotion);
 } else {
