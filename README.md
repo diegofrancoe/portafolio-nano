@@ -1,14 +1,4 @@
-<p align="center"><img src="assets/bf-brand.svg" alt="BF." width="360"></p>
-
-<h1 align="center">Bernardo Franco — Creative Portfolio</h1>
-<p align="center"><strong>Visual storytelling · audiovisual production · creative direction</strong></p>
-<p align="center"><a href="https://bernardofrancoe.com/"><strong>Live website</strong></a></p>
-
-A responsive portfolio designed and developed to present Bernardo Franco's audiovisual and creative work through a clean, project-led visual experience.
-
-| Project portfolio | Video integration | Visual design | Responsive experience |
-|---|---|---|---|
-| Individual case pages | Photography + audiovisual media | Custom UI/UX | Desktop + mobile |
+<p align="center"><img src="assets/readme-hero.svg" alt="Project overview" width="100%"></p>
 
 ### Selected work
 CENIZA · Amigos Vinilos · Super Rayo · Tu Plon Stereo · Podcast Introcrea
