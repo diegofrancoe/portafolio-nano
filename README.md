@@ -1,4 +1,4 @@
-<p align="center"><img src="assets/bernardo-cv-portrait-natural.png" alt="Bernardo Franco" width="240"></p>
+<p align="center"><img src="assets/bf-brand.svg" alt="BF. — Bernardo Franco" width="420"></p>
 
 # Bernardo Franco — Creative Portfolio
 
