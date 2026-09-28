@@ -4,39 +4,39 @@
 
 **Visual storytelling · audiovisual production · creative direction**
 
-**Live website:** https://bernardofrancoe.com/
+[Live website](https://bernardofrancoe.com/)
 
-Responsive portfolio website designed and developed to present Bernardo Franco's audiovisual and creative work through a project-led visual experience.
+A responsive portfolio designed and developed to present Bernardo Franco's audiovisual and creative work through a project-led visual experience.
 
-## What it includes
+## Highlights
 
-- Responsive portfolio landing page.
-- Individual project pages and visual case studies.
-- Image, video and behind-the-scenes media.
+- Responsive landing and individual project pages.
 - Custom UI/UX focused on visual storytelling.
-- Responsive composition for desktop and mobile.
+- Photography, video and behind-the-scenes media.
+- Project-specific galleries and interactions.
+- Desktop and mobile responsive composition.
 - SEO files, sitemap and production deployment.
 
 ## Selected work
 
-The site brings together audiovisual projects including CENIZA, Amigos Vinilos, Super Rayo, Tu Plon Stereo, Podcast Introcrea and other creative work.
+CENIZA · Amigos Vinilos · Super Rayo · Tu Plon Stereo · Podcast Introcrea · additional audiovisual projects
 
-## Build
+## Stack
 
 HTML · CSS · JavaScript
 
+## Project structure
+
 ~~~text
 index.html       Main portfolio
-styles.css       Global responsive UI
+styles.css       Responsive UI
 script.js        Main interactions
-project.html     Project view
+project.html     Project experience
 project.css      Project styling
 project.js       Project interactions
-assets/          Portraits and project media
+assets/          Brand and project media
 ~~~
 
-## Production
-
-**https://bernardofrancoe.com/**
+**Production:** https://bernardofrancoe.com/
 
 Design and development by **Diego Franco**.
