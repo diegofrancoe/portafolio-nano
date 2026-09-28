@@ -1,16 +1,42 @@
-# Portafolio Nano
+<p align="center"><img src="assets/bernardo-transparent-real.png" alt="Bernardo Franco" width="180"></p>
 
-Proyecto independiente de exploración y práctica de diseño UI/UX.
+# Bernardo Franco — Creative Portfolio
 
-No forma parte del portafolio principal de Diego. Este espacio puede usarse para desarrollar ideas, documentar decisiones de diseño y experimentar libremente.
+**Visual storytelling · audiovisual production · creative direction**
 
-## Estructura
+**Live website:** https://bernardofrancoe.com/
 
-- `research/`: referencias, investigación y notas.
-- `wireframes/`: bocetos y flujos iniciales.
-- `ui/`: diseños visuales y entregables.
-- `assets/`: imágenes, iconos y otros recursos.
+Responsive portfolio website designed and developed to present Bernardo Franco's audiovisual and creative work through a project-led visual experience.
 
-## Publicación
+## What it includes
 
-El proyecto se guarda en un repositorio privado e independiente de GitHub.
+- Responsive portfolio landing page.
+- Individual project pages and visual case studies.
+- Image, video and behind-the-scenes media.
+- Custom UI/UX focused on visual storytelling.
+- Responsive composition for desktop and mobile.
+- SEO files, sitemap and production deployment.
+
+## Selected work
+
+The site brings together audiovisual projects including CENIZA, Amigos Vinilos, Super Rayo, Tu Plon Stereo, Podcast Introcrea and other creative work.
+
+## Build
+
+HTML · CSS · JavaScript
+
+~~~text
+index.html       Main portfolio
+styles.css       Global responsive UI
+script.js        Main interactions
+project.html     Project view
+project.css      Project styling
+project.js       Project interactions
+assets/          Portraits and project media
+~~~
+
+## Production
+
+**https://bernardofrancoe.com/**
+
+Design and development by **Diego Franco**.
