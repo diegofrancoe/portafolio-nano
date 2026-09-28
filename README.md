@@ -1,4 +1,8 @@
-<p align="center"><img src="assets/readme-hero.svg" alt="Project overview" width="100%"></p>
+<p align="center"><a href="https://bernardofrancoe.com/"><img src="assets/readme-hero.svg" alt="Project overview" width="100%"></a></p>
+
+<p align="center"><a href="https://bernardofrancoe.com/"><strong>Live website</strong></a> · <a href="https://www.diegofrancoe.com/"><strong>Case study</strong></a></p>
+
+Bernardo Franco's portfolio is a responsive visual experience designed around audiovisual storytelling. Individual project pages combine photography, video, custom interactions and responsive composition to present creative work clearly across desktop and mobile.
 
 ### Selected work
 CENIZA · Amigos Vinilos · Super Rayo · Tu Plon Stereo · Podcast Introcrea
