@@ -2,6 +2,9 @@
 
 Bernardo Franco's portfolio is a responsive visual experience designed around audiovisual storytelling. Individual project pages combine photography, video, custom interactions and responsive composition to present creative work clearly across desktop and mobile.
 
+### Core stack
+![HTML5](https://img.shields.io/badge/HTML5-252824?style=flat-square&logo=html5&logoColor=74CDA7) ![CSS](https://img.shields.io/badge/CSS-252824?style=flat-square&logo=css&logoColor=74CDA7) ![JavaScript](https://img.shields.io/badge/JavaScript-252824?style=flat-square&logo=javascript&logoColor=74CDA7) ![Vercel](https://img.shields.io/badge/Vercel-252824?style=flat-square&logo=vercel&logoColor=74CDA7)
+
 ### Selected work
 CENIZA · Amigos Vinilos · Super Rayo · Tu Plon Stereo · Podcast Introcrea
 
