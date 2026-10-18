@@ -4,6 +4,18 @@ Bernardo Franco's portfolio is a responsive creative website built to present au
 
 The implementation intentionally stays close to the browser platform: semantic HTML, custom CSS and JavaScript are used to keep the experience fast, easy to maintain and fully controlled without introducing unnecessary framework overhead.
 
+### Product Overview
+
+A custom web portfolio that transforms Bernardo Franco's audiovisual work into a navigable digital experience focused on discovery and visual storytelling.
+
+### Product Design & UX/UI
+
+Responsive composition, typography, media hierarchy and project-led navigation are designed to help visitors explore the work on desktop and mobile. The interface deliberately stays lightweight so the content remains central.
+
+### What I Built
+
+A responsive HTML, CSS and JavaScript experience with reusable project pages, custom interactions and production deployment. This is a web and digital experience project, not an AI-powered application.
+
 ### Core stack
 ![HTML5](https://img.shields.io/badge/HTML5-252824?style=flat-square&logo=html5&logoColor=74CDA7) ![CSS](https://img.shields.io/badge/CSS-252824?style=flat-square&logo=css&logoColor=74CDA7) ![JavaScript](https://img.shields.io/badge/JavaScript-252824?style=flat-square&logo=javascript&logoColor=74CDA7) ![Vercel](https://img.shields.io/badge/Vercel-252824?style=flat-square&logo=vercel&logoColor=74CDA7)
 
